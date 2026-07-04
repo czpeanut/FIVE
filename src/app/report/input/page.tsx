@@ -1,6 +1,6 @@
 "use client";
 
-import { useEffect, useState } from "react";
+import { useState } from "react";
 import { useRouter, useSearchParams } from "next/navigation";
 import { Suspense } from "react";
 import indicatorDB from "@/data/indicators.json";
@@ -25,7 +25,6 @@ function InputForm() {
 
   // Subject / week navigation
   const subjIdx = SUBJECTS.indexOf(subject);
-  const weekIdx = WEEKS.indexOf(week);
 
   function toggle(i: number) {
     setFlags(prev => { const n = [...prev]; n[i] = !n[i]; return n; });

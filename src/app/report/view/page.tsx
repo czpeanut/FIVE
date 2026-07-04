@@ -5,9 +5,9 @@ import { useSearchParams } from "next/navigation";
 import Link from "next/link";
 import indicatorDB from "@/data/indicators.json";
 import descDB from "@/data/descriptions.json";
-import { IndicatorDB, SUBJECTS, WEEKS, WEEK_ZH, Subject, WeekKey } from "@/lib/types";
+import { IndicatorDB, SUBJECTS, WEEKS, WEEK_ZH, Subject } from "@/lib/types";
 import { getAnswers } from "@/lib/store";
-import { calcAggregateScores, calcScores } from "@/lib/scoring";
+import { calcAggregateScores } from "@/lib/scoring";
 import { getSchoolInfo } from "@/lib/branches";
 import RadarChart from "@/components/RadarChart";
 
