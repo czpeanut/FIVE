@@ -1,0 +1,55 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;500;700&family=Noto+Serif+TC:wght@400;600;700;900&family=JetBrains+Mono:wght@400;600&display=swap');
+
+* { box-sizing: border-box; }
+
+body {
+  font-family: 'Noto Sans TC', system-ui, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  background: #ddd3bd;
+  min-height: 100vh;
+}
+
+.serif { font-family: 'Noto Serif TC', serif; }
+.mono  { font-family: 'JetBrains Mono', monospace; font-variant-numeric: tabular-nums; }
+
+@keyframes stampIn {
+  0%   { opacity: 0; transform: rotate(-46deg) scale(2.1); }
+  60%  { opacity: 1; transform: rotate(-6deg) scale(.92); }
+  100% { opacity: 1; transform: rotate(-13deg) scale(1); }
+}
+
+@keyframes inkRise {
+  from { opacity: 0; transform: translateY(8px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+
+.anim-ink { animation: inkRise 0.45s ease both; }
+.anim-stamp { animation: stampIn 0.65s cubic-bezier(.22,1,.36,1) both; }
+
+@media print {
+  * { -webkit-print-color-adjust: exact !important; print-color-adjust: exact !important; }
+  body { background: #f2ecdd !important; margin: 0; padding: 0; }
+  .no-print { display: none !important; }
+
+  /* 成績單容器：填滿頁面，移除陰影 */
+  .report-page-wrap {
+    padding: 0 !important;
+    background: #f2ecdd !important;
+  }
+  .report-card-root {
+    box-shadow: none !important;
+    border: none !important;
+    width: 100% !important;
+    max-width: 100% !important;
+  }
+
+  /* 每個科目區塊避免跨頁斷開 */
+  .subject-block {
+    break-inside: avoid;
+    page-break-inside: avoid;
+  }
+}
