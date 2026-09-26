@@ -1,0 +1,5934 @@
+{
+ "國三寒假模考": {
+  "gradeBands": {
+   "國文": {
+    "A++": 41,
+    "A+": 39,
+    "A": 36,
+    "B++": 32,
+    "B+": 28,
+    "B": 18,
+    "C": 0
+   },
+   "英文": {
+    "A++": 41,
+    "A+": 40,
+    "A": 38,
+    "B++": 34,
+    "B+": 30,
+    "B": 21,
+    "C": 0
+   },
+   "自然": {
+    "A++": 48,
+    "A+": 47,
+    "A": 44,
+    "B++": 37,
+    "B+": 28,
+    "B": 19,
+    "C": 0
+   },
+   "社會": {
+    "A++": 56,
+    "A+": 54,
+    "A": 52,
+    "B++": 45,
+    "B+": 38,
+    "B": 24,
+    "C": 0
+   },
+   "數學": {
+    "mode": "nonChoiceCorrect",
+    "nonChoiceBands": {
+     "0": {
+      "A++": 26,
+      "A+": 26,
+      "A": 23,
+      "B++": 20,
+      "B+": 17,
+      "B": 12,
+      "C": 0
+     },
+     "1": {
+      "A++": 26,
+      "A+": 25,
+      "A": 22,
+      "B++": 19,
+      "B+": 16,
+      "B": 11,
+      "C": 0
+     },
+     "2": {
+      "A++": 26,
+      "A+": 24,
+      "A": 21,
+      "B++": 18,
+      "B+": 16,
+      "B": 10,
+      "C": 0
+     },
+     "3": {
+      "A++": 25,
+      "A+": 23,
+      "A": 21,
+      "B++": 18,
+      "B+": 15,
+      "B": 10,
+      "C": 0
+     },
+     "4": {
+      "A++": 24,
+      "A+": 23,
+      "A": 20,
+      "B++": 17,
+      "B+": 14,
+      "B": 9,
+      "C": 0
+     },
+     "5": {
+      "A++": 24,
+      "A+": 22,
+      "A": 19,
+      "B++": 16,
+      "B+": 14,
+      "B": 8,
+      "C": 0
+     },
+     "6": {
+      "A++": 23,
+      "A+": 21,
+      "A": 18,
+      "B++": 16,
+      "B+": 13,
+      "B": 7,
+      "C": 0
+     }
+    }
+   }
+  },
+  "國文": {
+   "maxScore": 210,
+   "skills": [
+    "基本詞義",
+    "語句的種類",
+    "語法的類型",
+    "節氣氣候",
+    "字音字形",
+    "修辭手法",
+    "成語應用",
+    "書信格式",
+    "標點符號",
+    "古典詩詞賞析",
+    "文意文閱讀測驗",
+    "分析圖表文章",
+    "散文閱讀理解",
+    "古典詩詞格式",
+    "現代詩詞解讀"
+   ],
+   "questions": [
+    {
+     "id": 1,
+     "correct": "D",
+     "skill": [
+      "分析圖表文章"
+     ],
+     "weight": 5
+    },
+    {
+     "id": 2,
+     "correct": "B",
+     "skill": [
+      "散文閱讀理解"
+     ],
+     "weight": 5
+    },
+    {
+     "id": 3,
+     "correct": "B",
+     "skill": [
+      "語句的種類"
+     ],
+     "weight": 5
+    },
+    {
+     "id": 4,
+     "correct": "D",
+     "skill": [
+      "現代詩詞解讀"
+     ],
+     "weight": 5
+    },
+    {
+     "id": 5,
+     "correct": "D",
+     "skill": [
+      "語句的種類"
+     ],
+     "weight": 5
+    },
+    {
+     "id": 6,
+     "correct": "D",
+     "skill": [
+      "散文閱讀理解"
+     ],
+     "weight": 5
+    },
+    {
+     "id": 7,
+     "correct": "D",
+     "skill": [
+      "古典詩詞格式"
+     ],
+     "weight": 5
+    },
+    {
+     "id": 8,
+     "correct": "D",
+     "skill": [
+      "古典詩詞格式"
+     ],
+     "weight": 5
+    },
+    {
+     "id": 9,
+     "correct": "A",
+     "skill": [
+      "散文閱讀理解"
+     ],
+     "weight": 5
+    },
+    {
+     "id": 10,
+     "correct": "A",
+     "skill": [
+      "文意文閱讀測驗"
+     ],
+     "weight": 5
+    },
+    {
+     "id": 11,
+     "correct": "A",
+     "skill": [
+      "散文閱讀理解"
+     ],
+     "weight": 5
+    },
+    {
+     "id": 12,
+     "correct": "D",
+     "skill": [
+      "標點符號"
+     ],
+     "weight": 5
+    },
+    {
+     "id": 13,
+     "correct": "C",
+     "skill": [
+      "成語應用"
+     ],
+     "weight": 5
+    },
+    {
+     "id": 14,
+     "correct": "D",
+     "skill": [
+      "字音字形"
+     ],
+     "weight": 5
+    },
+    {
+     "id": 15,
+     "correct": "C",
+     "skill": [
+      "散文閱讀理解"
+     ],
+     "weight": 5
+    },
+    {
+     "id": 16,
+     "correct": "A",
+     "skill": [
+      "字音字形"
+     ],
+     "weight": 5
+    },
+    {
+     "id": 17,
+     "correct": "B",
+     "skill": [
+      "古典詩詞格式"
+     ],
+     "weight": 5
+    },
+    {
+     "id": 18,
+     "correct": "B",
+     "skill": [
+      "古典詩詞格式"
+     ],
+     "weight": 5
+    },
+    {
+     "id": 19,
+     "correct": "A",
+     "skill": [
+      "成語應用"
+     ],
+     "weight": 5
+    },
+    {
+     "id": 20,
+     "correct": "B",
+     "skill": [
+      "文意文閱讀測驗"
+     ],
+     "weight": 5
+    },
+    {
+     "id": 21,
+     "correct": "C",
+     "skill": [
+      "分析圖表文章"
+     ],
+     "weight": 5
+    },
+    {
+     "id": 22,
+     "correct": "C",
+     "skill": [
+      "文意文閱讀測驗"
+     ],
+     "weight": 5
+    },
+    {
+     "id": 23,
+     "correct": "B",
+     "skill": [
+      "文意文閱讀測驗"
+     ],
+     "weight": 5
+    },
+    {
+     "id": 24,
+     "correct": "B",
+     "skill": [
+      "文意文閱讀測驗"
+     ],
+     "weight": 5
+    },
+    {
+     "id": 25,
+     "correct": "B",
+     "skill": [
+      "散文閱讀理解"
+     ],
+     "weight": 5
+    },
+    {
+     "id": 26,
+     "correct": "B",
+     "skill": [
+      "散文閱讀理解"
+     ],
+     "weight": 5
+    },
+    {
+     "id": 27,
+     "correct": "D",
+     "skill": [
+      "散文閱讀理解"
+     ],
+     "weight": 5
+    },
+    {
+     "id": 28,
+     "correct": "A",
+     "skill": [
+      "散文閱讀理解"
+     ],
+     "weight": 5
+    },
+    {
+     "id": 29,
+     "correct": "A",
+     "skill": [
+      "散文閱讀理解"
+     ],
+     "weight": 5
+    },
+    {
+     "id": 30,
+     "correct": "B",
+     "skill": [
+      "散文閱讀理解"
+     ],
+     "weight": 5
+    },
+    {
+     "id": 31,
+     "correct": "C",
+     "skill": [
+      "散文閱讀理解"
+     ],
+     "weight": 5
+    },
+    {
+     "id": 32,
+     "correct": "B",
+     "skill": [
+      "分析圖表文章"
+     ],
+     "weight": 5
+    },
+    {
+     "id": 33,
+     "correct": "B",
+     "skill": [
+      "分析圖表文章"
+     ],
+     "weight": 5
+    },
+    {
+     "id": 34,
+     "correct": "B",
+     "skill": [
+      "分析圖表文章"
+     ],
+     "weight": 5
+    },
+    {
+     "id": 35,
+     "correct": "A",
+     "skill": [
+      "分析圖表文章"
+     ],
+     "weight": 5
+    },
+    {
+     "id": 36,
+     "correct": "C",
+     "skill": [
+      "散文閱讀理解"
+     ],
+     "weight": 5
+    },
+    {
+     "id": 37,
+     "correct": "D",
+     "skill": [
+      "散文閱讀理解"
+     ],
+     "weight": 5
+    },
+    {
+     "id": 38,
+     "correct": "C",
+     "skill": [
+      "文意文閱讀測驗"
+     ],
+     "weight": 5
+    },
+    {
+     "id": 39,
+     "correct": "A",
+     "skill": [
+      "文意文閱讀測驗"
+     ],
+     "weight": 5
+    },
+    {
+     "id": 40,
+     "correct": "A",
+     "skill": [
+      "文意文閱讀測驗"
+     ],
+     "weight": 5
+    },
+    {
+     "id": 41,
+     "correct": "C",
+     "skill": [
+      "文意文閱讀測驗"
+     ],
+     "weight": 5
+    },
+    {
+     "id": 42,
+     "correct": "C",
+     "skill": [
+      "文意文閱讀測驗"
+     ],
+     "weight": 5
+    }
+   ]
+  },
+  "英文": {
+   "maxScore": 215,
+   "skills": [
+    "句型結構",
+    "常用介詞",
+    "動詞時態",
+    "基本字彙",
+    "冠詞使用規則",
+    "名詞單複數",
+    "形容詞與副詞",
+    "比較級與最高級",
+    "連接詞種類",
+    "疑問句結構",
+    "否定句型結構",
+    "關係代名詞",
+    "文章閱讀理解",
+    "助動詞使用規則",
+    "動名詞應用"
+   ],
+   "questions": [
+    {
+     "id": 1,
+     "correct": "D",
+     "skill": [
+      "常用介詞"
+     ],
+     "weight": 5
+    },
+    {
+     "id": 2,
+     "correct": "B",
+     "skill": [
+      "動詞時態"
+     ],
+     "weight": 5
+    },
+    {
+     "id": 3,
+     "correct": "C",
+     "skill": [
+      "連接詞種類"
+     ],
+     "weight": 5
+    },
+    {
+     "id": 4,
+     "correct": "A",
+     "skill": [
+      "基本字彙"
+     ],
+     "weight": 5
+    },
+    {
+     "id": 5,
+     "correct": "C",
+     "skill": [
+      "關係代名詞",
+      "否定句型結構"
+     ],
+     "weight": 5
+    },
+    {
+     "id": 6,
+     "correct": "C",
+     "skill": [
+      "動詞時態"
+     ],
+     "weight": 5
+    },
+    {
+     "id": 7,
+     "correct": "D",
+     "skill": [
+      "形容詞與副詞"
+     ],
+     "weight": 5
+    },
+    {
+     "id": 8,
+     "correct": "B",
+     "skill": [
+      "名詞單複數",
+      "句型結構"
+     ],
+     "weight": 5
+    },
+    {
+     "id": 9,
+     "correct": "A",
+     "skill": [
+      "疑問句結構"
+     ],
+     "weight": 5
+    },
+    {
+     "id": 10,
+     "correct": "B",
+     "skill": [
+      "否定句型結構"
+     ],
+     "weight": 5
+    },
+    {
+     "id": 11,
+     "correct": "C",
+     "skill": [
+      "句型結構"
+     ],
+     "weight": 5
+    },
+    {
+     "id": 12,
+     "correct": "C",
+     "skill": [
+      "助動詞使用規則"
+     ],
+     "weight": 5
+    },
+    {
+     "id": 13,
+     "correct": "B",
+     "skill": [
+      "基本字彙"
+     ],
+     "weight": 5
+    },
+    {
+     "id": 14,
+     "correct": "C",
+     "skill": [
+      "動詞時態"
+     ],
+     "weight": 5
+    },
+    {
+     "id": 15,
+     "correct": "A",
+     "skill": [
+      "動名詞應用"
+     ],
+     "weight": 5
+    },
+    {
+     "id": 16,
+     "correct": "C",
+     "skill": [
+      "基本字彙"
+     ],
+     "weight": 5
+    },
+    {
+     "id": 17,
+     "correct": "C",
+     "skill": [
+      "動詞時態"
+     ],
+     "weight": 5
+    },
+    {
+     "id": 18,
+     "correct": "A",
+     "skill": [
+      "冠詞使用規則"
+     ],
+     "weight": 5
+    },
+    {
+     "id": 19,
+     "correct": "D",
+     "skill": [
+      "句型結構"
+     ],
+     "weight": 5
+    },
+    {
+     "id": 20,
+     "correct": "C",
+     "skill": [
+      "基本字彙"
+     ],
+     "weight": 5
+    },
+    {
+     "id": 21,
+     "correct": "D",
+     "skill": [
+      "文章閱讀理解"
+     ],
+     "weight": 5
+    },
+    {
+     "id": 22,
+     "correct": "C",
+     "skill": [
+      "文章閱讀理解"
+     ],
+     "weight": 5
+    },
+    {
+     "id": 23,
+     "correct": "D",
+     "skill": [
+      "文章閱讀理解"
+     ],
+     "weight": 5
+    },
+    {
+     "id": 24,
+     "correct": "C",
+     "skill": [
+      "文章閱讀理解"
+     ],
+     "weight": 5
+    },
+    {
+     "id": 25,
+     "correct": "A",
+     "skill": [
+      "比較級與最高級",
+      "文章閱讀理解"
+     ],
+     "weight": 5
+    },
+    {
+     "id": 26,
+     "correct": "C",
+     "skill": [
+      "文章閱讀理解"
+     ],
+     "weight": 5
+    },
+    {
+     "id": 27,
+     "correct": "D",
+     "skill": [
+      "文章閱讀理解"
+     ],
+     "weight": 5
+    },
+    {
+     "id": 28,
+     "correct": "C",
+     "skill": [
+      "文章閱讀理解"
+     ],
+     "weight": 5
+    },
+    {
+     "id": 29,
+     "correct": "C",
+     "skill": [
+      "文章閱讀理解"
+     ],
+     "weight": 5
+    },
+    {
+     "id": 30,
+     "correct": "C",
+     "skill": [
+      "文章閱讀理解"
+     ],
+     "weight": 5
+    },
+    {
+     "id": 31,
+     "correct": "A",
+     "skill": [
+      "文章閱讀理解"
+     ],
+     "weight": 5
+    },
+    {
+     "id": 32,
+     "correct": "B",
+     "skill": [
+      "文章閱讀理解"
+     ],
+     "weight": 5
+    },
+    {
+     "id": 33,
+     "correct": "D",
+     "skill": [
+      "文章閱讀理解"
+     ],
+     "weight": 5
+    },
+    {
+     "id": 34,
+     "correct": "B",
+     "skill": [
+      "文章閱讀理解"
+     ],
+     "weight": 5
+    },
+    {
+     "id": 35,
+     "correct": "D",
+     "skill": [
+      "文章閱讀理解"
+     ],
+     "weight": 5
+    },
+    {
+     "id": 36,
+     "correct": "C",
+     "skill": [
+      "文章閱讀理解"
+     ],
+     "weight": 5
+    },
+    {
+     "id": 37,
+     "correct": "C",
+     "skill": [
+      "文章閱讀理解"
+     ],
+     "weight": 5
+    },
+    {
+     "id": 38,
+     "correct": "A",
+     "skill": [
+      "文章閱讀理解"
+     ],
+     "weight": 5
+    },
+    {
+     "id": 39,
+     "correct": "C",
+     "skill": [
+      "文章閱讀理解"
+     ],
+     "weight": 5
+    },
+    {
+     "id": 40,
+     "correct": "C",
+     "skill": [
+      "文章閱讀理解"
+     ],
+     "weight": 5
+    },
+    {
+     "id": 41,
+     "correct": "C",
+     "skill": [
+      "動詞時態"
+     ],
+     "weight": 5
+    },
+    {
+     "id": 42,
+     "correct": "D",
+     "skill": [
+      "動詞時態"
+     ],
+     "weight": 5
+    },
+    {
+     "id": 43,
+     "correct": "A",
+     "skill": [
+      "基本字彙"
+     ],
+     "weight": 5
+    }
+   ]
+  },
+  "數學": {
+   "maxScore": 125,
+   "skills": [
+    "數的運算",
+    "多項式化簡運算",
+    "方程式列式",
+    "比例性質",
+    "等式不等式求解",
+    "函數圖形判別",
+    "數列規則",
+    "角的性質",
+    "平行線判別",
+    "四邊形性質",
+    "尺規作圖",
+    "全等與相似",
+    "平面座標",
+    "圓的性質",
+    "三心應用",
+    "圖表判定",
+    "統計資料",
+    "因倍質數"
+   ],
+   "questions": [
+    {
+     "id": 1,
+     "correct": "A",
+     "skill": [
+      "數的運算"
+     ],
+     "weight": 5
+    },
+    {
+     "id": 2,
+     "correct": "B",
+     "skill": [
+      "比例性質"
+     ],
+     "weight": 5
+    },
+    {
+     "id": 3,
+     "correct": "C",
+     "skill": [
+      "因倍質數"
+     ],
+     "weight": 5
+    },
+    {
+     "id": 4,
+     "correct": "B",
+     "skill": [
+      "數的運算"
+     ],
+     "weight": 5
+    },
+    {
+     "id": 5,
+     "correct": "A",
+     "skill": [
+      "數列規則"
+     ],
+     "weight": 5
+    },
+    {
+     "id": 6,
+     "correct": "D",
+     "skill": [
+      "等式不等式求解"
+     ],
+     "weight": 5
+    },
+    {
+     "id": 7,
+     "correct": "A",
+     "skill": [
+      "等式不等式求解"
+     ],
+     "weight": 5
+    },
+    {
+     "id": 8,
+     "correct": "D",
+     "skill": [
+      "方程式列式"
+     ],
+     "weight": 5
+    },
+    {
+     "id": 9,
+     "correct": "B",
+     "skill": [
+      "函數圖形判別"
+     ],
+     "weight": 5
+    },
+    {
+     "id": 10,
+     "correct": "D",
+     "skill": [
+      "平面座標"
+     ],
+     "weight": 5
+    },
+    {
+     "id": 11,
+     "correct": "A",
+     "skill": [
+      "圓的性質"
+     ],
+     "weight": 5
+    },
+    {
+     "id": 12,
+     "correct": "B",
+     "skill": [
+      "尺規作圖"
+     ],
+     "weight": 5
+    },
+    {
+     "id": 13,
+     "correct": "C",
+     "skill": [
+      "平行線判別",
+      "角的性質"
+     ],
+     "weight": 5
+    },
+    {
+     "id": 14,
+     "correct": "A",
+     "skill": [
+      "全等與相似"
+     ],
+     "weight": 5
+    },
+    {
+     "id": 15,
+     "correct": "A",
+     "skill": [
+      "全等與相似"
+     ],
+     "weight": 5
+    },
+    {
+     "id": 16,
+     "correct": "C",
+     "skill": [
+      "圓的性質",
+      "角的性質"
+     ],
+     "weight": 5
+    },
+    {
+     "id": 17,
+     "correct": "C",
+     "skill": [
+      "三心應用"
+     ],
+     "weight": 5
+    },
+    {
+     "id": 18,
+     "correct": "A",
+     "skill": [
+      "全等與相似"
+     ],
+     "weight": 5
+    },
+    {
+     "id": 19,
+     "correct": "D",
+     "skill": [
+      "三心應用"
+     ],
+     "weight": 5
+    },
+    {
+     "id": 20,
+     "correct": "C",
+     "skill": [
+      "平面座標",
+      "全等與相似"
+     ],
+     "weight": 5
+    },
+    {
+     "id": 21,
+     "correct": "B",
+     "skill": [
+      "數列規則"
+     ],
+     "weight": 5
+    },
+    {
+     "id": 22,
+     "correct": "D",
+     "skill": [
+      "全等與相似"
+     ],
+     "weight": 5
+    },
+    {
+     "id": 23,
+     "correct": "C",
+     "skill": [
+      "平行線判別"
+     ],
+     "weight": 5
+    },
+    {
+     "id": 24,
+     "correct": "C",
+     "skill": [
+      "平行線判別",
+      "全等與相似"
+     ],
+     "weight": 5
+    },
+    {
+     "id": 25,
+     "correct": "A",
+     "skill": [
+      "四邊形性質"
+     ],
+     "weight": 5
+    }
+   ]
+  },
+  "自然": {
+   "maxScore": 260,
+   "skills": [
+    "牛頓運動定律",
+    "速度加速度",
+    "電磁力",
+    "基本電學",
+    "力與摩擦力",
+    "壓力與浮力",
+    "物質三態變化",
+    "元素化合物",
+    "聲波與光",
+    "原子結構與特性",
+    "化學、物理變化",
+    "化學反應方程式",
+    "原子量分子量",
+    "氧化還原與酸鹼",
+    "水溶液與濃度",
+    "細胞功能與結構",
+    "基因與遺傳",
+    "生物的分類",
+    "人體器官功能",
+    "生態與食物鏈",
+    "地球結構與層次",
+    "岩石種類與形成",
+    "天氣與氣候",
+    "地球月亮與太陽",
+    "水,碳,氧的循環"
+   ],
+   "questions": [
+    {
+     "id": 1,
+     "correct": "A",
+     "skill": [
+      "元素化合物"
+     ],
+     "weight": 5
+    },
+    {
+     "id": 2,
+     "correct": "D",
+     "skill": [
+      "元素化合物"
+     ],
+     "weight": 5
+    },
+    {
+     "id": 3,
+     "correct": "C",
+     "skill": [
+      "化學、物理變化"
+     ],
+     "weight": 5
+    },
+    {
+     "id": 4,
+     "correct": "C",
+     "skill": [
+      "化學、物理變化"
+     ],
+     "weight": 5
+    },
+    {
+     "id": 5,
+     "correct": "D",
+     "skill": [
+      "化學反應方程式"
+     ],
+     "weight": 5
+    },
+    {
+     "id": 6,
+     "correct": "C",
+     "skill": [
+      "化學反應方程式"
+     ],
+     "weight": 5
+    },
+    {
+     "id": 7,
+     "correct": "C",
+     "skill": [
+      "化學反應方程式"
+     ],
+     "weight": 5
+    },
+    {
+     "id": 8,
+     "correct": "D",
+     "skill": [
+      "化學反應方程式"
+     ],
+     "weight": 5
+    },
+    {
+     "id": 9,
+     "correct": "B",
+     "skill": [
+      "化學反應方程式"
+     ],
+     "weight": 5
+    },
+    {
+     "id": 10,
+     "correct": "C",
+     "skill": [
+      "水溶液與濃度"
+     ],
+     "weight": 5
+    },
+    {
+     "id": 11,
+     "correct": "D",
+     "skill": [
+      "水溶液與濃度"
+     ],
+     "weight": 5
+    },
+    {
+     "id": 12,
+     "correct": "C",
+     "skill": [
+      "水溶液與濃度"
+     ],
+     "weight": 5
+    },
+    {
+     "id": 13,
+     "correct": "D",
+     "skill": [
+      "物質三態變化"
+     ],
+     "weight": 5
+    },
+    {
+     "id": 14,
+     "correct": "D",
+     "skill": [
+      "原子結構與特性"
+     ],
+     "weight": 5
+    },
+    {
+     "id": 15,
+     "correct": "D",
+     "skill": [
+      "原子結構與特性"
+     ],
+     "weight": 5
+    },
+    {
+     "id": 16,
+     "correct": "D",
+     "skill": [
+      "原子量分子量"
+     ],
+     "weight": 5
+    },
+    {
+     "id": 17,
+     "correct": "B",
+     "skill": [
+      "氧化還原與酸鹼"
+     ],
+     "weight": 5
+    },
+    {
+     "id": 18,
+     "correct": "A",
+     "skill": [
+      "氧化還原與酸鹼"
+     ],
+     "weight": 5
+    },
+    {
+     "id": 19,
+     "correct": "A",
+     "skill": [
+      "氧化還原與酸鹼"
+     ],
+     "weight": 5
+    },
+    {
+     "id": 20,
+     "correct": "B",
+     "skill": [
+      "氧化還原與酸鹼"
+     ],
+     "weight": 5
+    },
+    {
+     "id": 21,
+     "correct": "B",
+     "skill": [
+      "人體器官功能"
+     ],
+     "weight": 5
+    },
+    {
+     "id": 22,
+     "correct": "A",
+     "skill": [
+      "人體器官功能"
+     ],
+     "weight": 5
+    },
+    {
+     "id": 23,
+     "correct": "D",
+     "skill": [
+      "生物的分類"
+     ],
+     "weight": 5
+    },
+    {
+     "id": 24,
+     "correct": "A",
+     "skill": [
+      "生態與食物鏈"
+     ],
+     "weight": 5
+    },
+    {
+     "id": 25,
+     "correct": "A",
+     "skill": [
+      "基因與遺傳"
+     ],
+     "weight": 5
+    },
+    {
+     "id": 26,
+     "correct": "C",
+     "skill": [
+      "基因與遺傳"
+     ],
+     "weight": 5
+    },
+    {
+     "id": 27,
+     "correct": "A",
+     "skill": [
+      "基因與遺傳"
+     ],
+     "weight": 5
+    },
+    {
+     "id": 28,
+     "correct": "D",
+     "skill": [
+      "細胞功能與結構"
+     ],
+     "weight": 5
+    },
+    {
+     "id": 29,
+     "correct": "C",
+     "skill": [
+      "細胞功能與結構"
+     ],
+     "weight": 5
+    },
+    {
+     "id": 30,
+     "correct": "A",
+     "skill": [
+      "水,碳,氧的循環"
+     ],
+     "weight": 5
+    },
+    {
+     "id": 31,
+     "correct": "B",
+     "skill": [
+      "水,碳,氧的循環"
+     ],
+     "weight": 5
+    },
+    {
+     "id": 32,
+     "correct": "B",
+     "skill": [
+      "地球月亮與太陽"
+     ],
+     "weight": 5
+    },
+    {
+     "id": 33,
+     "correct": "D",
+     "skill": [
+      "地球月亮與太陽"
+     ],
+     "weight": 5
+    },
+    {
+     "id": 34,
+     "correct": "A",
+     "skill": [
+      "地球月亮與太陽"
+     ],
+     "weight": 5
+    },
+    {
+     "id": 35,
+     "correct": "B",
+     "skill": [
+      "地球結構與層次"
+     ],
+     "weight": 5
+    },
+    {
+     "id": 36,
+     "correct": "D",
+     "skill": [
+      "地球結構與層次"
+     ],
+     "weight": 5
+    },
+    {
+     "id": 37,
+     "correct": "D",
+     "skill": [
+      "地球結構與層次"
+     ],
+     "weight": 5
+    },
+    {
+     "id": 38,
+     "correct": "A",
+     "skill": [
+      "地球結構與層次"
+     ],
+     "weight": 5
+    },
+    {
+     "id": 39,
+     "correct": "A",
+     "skill": [
+      "岩石種類與形成"
+     ],
+     "weight": 5
+    },
+    {
+     "id": 40,
+     "correct": "C",
+     "skill": [
+      "岩石種類與形成"
+     ],
+     "weight": 5
+    },
+    {
+     "id": 41,
+     "correct": "B",
+     "skill": [
+      "力與摩擦力"
+     ],
+     "weight": 5
+    },
+    {
+     "id": 42,
+     "correct": "D",
+     "skill": [
+      "力與摩擦力"
+     ],
+     "weight": 5
+    },
+    {
+     "id": 43,
+     "correct": "B",
+     "skill": [
+      "速度加速度"
+     ],
+     "weight": 5
+    },
+    {
+     "id": 44,
+     "correct": "A",
+     "skill": [
+      "牛頓運動定律"
+     ],
+     "weight": 5
+    },
+    {
+     "id": 45,
+     "correct": "D",
+     "skill": [
+      "基本電學"
+     ],
+     "weight": 5
+    },
+    {
+     "id": 46,
+     "correct": "B",
+     "skill": [
+      "壓力與浮力"
+     ],
+     "weight": 5
+    },
+    {
+     "id": 47,
+     "correct": "A",
+     "skill": [
+      "壓力與浮力"
+     ],
+     "weight": 5
+    },
+    {
+     "id": 48,
+     "correct": "C",
+     "skill": [
+      "壓力與浮力"
+     ],
+     "weight": 5
+    },
+    {
+     "id": 49,
+     "correct": "C",
+     "skill": [
+      "聲波與光"
+     ],
+     "weight": 5
+    },
+    {
+     "id": 50,
+     "correct": "B",
+     "skill": [
+      "聲波與光"
+     ],
+     "weight": 5
+    },
+    {
+     "id": 51,
+     "correct": "C",
+     "skill": [
+      "天氣與氣候"
+     ],
+     "weight": 5
+    },
+    {
+     "id": 52,
+     "correct": "D",
+     "skill": [
+      "電磁力"
+     ],
+     "weight": 5
+    }
+   ]
+  },
+  "社會": {
+   "maxScore": 295,
+   "skills": [
+    "區位認識",
+    "地球氣候",
+    "地形分布",
+    "文化特色",
+    "洋流與季風",
+    "自然災害",
+    "都市化人口組成",
+    "地圖判別",
+    "環境與永續",
+    "臺灣史的變遷",
+    "中國史演變",
+    "近代國民國史",
+    "世界古文明",
+    "普世宗教發展",
+    "歐洲革命",
+    "世界列強的殖民",
+    "一二次世界大戰",
+    "近代國際局勢",
+    "公民與權利",
+    "性別平權與家庭",
+    "多元文化與社會",
+    "國家的組織",
+    "政府的功能",
+    "法律與人權",
+    "自由市場經濟",
+    "金融與貨幣",
+    "全球化國際社會"
+   ],
+   "questions": [
+    {
+     "id": 1,
+     "correct": "A",
+     "skill": [
+      "地球氣候"
+     ],
+     "weight": 5
+    },
+    {
+     "id": 2,
+     "correct": "A",
+     "skill": [
+      "政府的功能"
+     ],
+     "weight": 5
+    },
+    {
+     "id": 3,
+     "correct": "A",
+     "skill": [
+      "地形分布"
+     ],
+     "weight": 5
+    },
+    {
+     "id": 4,
+     "correct": "C",
+     "skill": [
+      "區位認識"
+     ],
+     "weight": 5
+    },
+    {
+     "id": 5,
+     "correct": "B",
+     "skill": [
+      "世界古文明"
+     ],
+     "weight": 5
+    },
+    {
+     "id": 6,
+     "correct": "C",
+     "skill": [
+      "地球氣候"
+     ],
+     "weight": 5
+    },
+    {
+     "id": 7,
+     "correct": "C",
+     "skill": [
+      "地圖判別"
+     ],
+     "weight": 5
+    },
+    {
+     "id": 8,
+     "correct": "D",
+     "skill": [
+      "中國史演變"
+     ],
+     "weight": 5
+    },
+    {
+     "id": 9,
+     "correct": "C",
+     "skill": [
+      "臺灣史的變遷"
+     ],
+     "weight": 5
+    },
+    {
+     "id": 10,
+     "correct": "B",
+     "skill": [
+      "環境與永續"
+     ],
+     "weight": 5
+    },
+    {
+     "id": 11,
+     "correct": "C",
+     "skill": [
+      "臺灣史的變遷"
+     ],
+     "weight": 5
+    },
+    {
+     "id": 12,
+     "correct": "A",
+     "skill": [
+      "自然災害"
+     ],
+     "weight": 5
+    },
+    {
+     "id": 13,
+     "correct": "B",
+     "skill": [
+      "全球化國際社會"
+     ],
+     "weight": 5
+    },
+    {
+     "id": 14,
+     "correct": "B",
+     "skill": [
+      "地形分布"
+     ],
+     "weight": 5
+    },
+    {
+     "id": 15,
+     "correct": "B",
+     "skill": [
+      "區位認識"
+     ],
+     "weight": 5
+    },
+    {
+     "id": 16,
+     "correct": "B",
+     "skill": [
+      "洋流與季風"
+     ],
+     "weight": 5
+    },
+    {
+     "id": 17,
+     "correct": "C",
+     "skill": [
+      "法律與人權"
+     ],
+     "weight": 5
+    },
+    {
+     "id": 18,
+     "correct": "C",
+     "skill": [
+      "普世宗教發展"
+     ],
+     "weight": 5
+    },
+    {
+     "id": 19,
+     "correct": "B",
+     "skill": [
+      "洋流與季風"
+     ],
+     "weight": 5
+    },
+    {
+     "id": 20,
+     "correct": "D",
+     "skill": [
+      "法律與人權"
+     ],
+     "weight": 5
+    },
+    {
+     "id": 21,
+     "correct": "D",
+     "skill": [
+      "政府的功能"
+     ],
+     "weight": 5
+    },
+    {
+     "id": 22,
+     "correct": "D",
+     "skill": [
+      "都市化人口組成"
+     ],
+     "weight": 5
+    },
+    {
+     "id": 23,
+     "correct": "C",
+     "skill": [
+      "文化特色"
+     ],
+     "weight": 5
+    },
+    {
+     "id": 24,
+     "correct": "B",
+     "skill": [
+      "環境與永續"
+     ],
+     "weight": 5
+    },
+    {
+     "id": 25,
+     "correct": "C",
+     "skill": [
+      "中國史演變"
+     ],
+     "weight": 5
+    },
+    {
+     "id": 26,
+     "correct": "D",
+     "skill": [
+      "法律與人權"
+     ],
+     "weight": 5
+    },
+    {
+     "id": 27,
+     "correct": "C",
+     "skill": [
+      "區位認識"
+     ],
+     "weight": 5
+    },
+    {
+     "id": 28,
+     "correct": "C",
+     "skill": [
+      "政府的功能"
+     ],
+     "weight": 5
+    },
+    {
+     "id": 29,
+     "correct": "D",
+     "skill": [
+      "國家的組織"
+     ],
+     "weight": 5
+    },
+    {
+     "id": 30,
+     "correct": "D",
+     "skill": [
+      "中國史演變"
+     ],
+     "weight": 5
+    },
+    {
+     "id": 31,
+     "correct": "C",
+     "skill": [
+      "自然災害"
+     ],
+     "weight": 5
+    },
+    {
+     "id": 32,
+     "correct": "D",
+     "skill": [
+      "臺灣史的變遷"
+     ],
+     "weight": 5
+    },
+    {
+     "id": 33,
+     "correct": "C",
+     "skill": [
+      "臺灣史的變遷"
+     ],
+     "weight": 5
+    },
+    {
+     "id": 34,
+     "correct": "C",
+     "skill": [
+      "公民與權利"
+     ],
+     "weight": 5
+    },
+    {
+     "id": 35,
+     "correct": "B",
+     "skill": [
+      "全球化國際社會"
+     ],
+     "weight": 5
+    },
+    {
+     "id": 36,
+     "correct": "B",
+     "skill": [
+      "國家的組織"
+     ],
+     "weight": 5
+    },
+    {
+     "id": 37,
+     "correct": "B",
+     "skill": [
+      "公民與權利"
+     ],
+     "weight": 5
+    },
+    {
+     "id": 38,
+     "correct": "D",
+     "skill": [
+      "地球氣候"
+     ],
+     "weight": 5
+    },
+    {
+     "id": 39,
+     "correct": "A",
+     "skill": [
+      "環境與永續"
+     ],
+     "weight": 5
+    },
+    {
+     "id": 40,
+     "correct": "C",
+     "skill": [
+      "近代國民國史"
+     ],
+     "weight": 5
+    },
+    {
+     "id": 41,
+     "correct": "B",
+     "skill": [
+      "近代國民國史"
+     ],
+     "weight": 5
+    },
+    {
+     "id": 42,
+     "correct": "C",
+     "skill": [
+      "多元文化與社會"
+     ],
+     "weight": 5
+    },
+    {
+     "id": 43,
+     "correct": "D",
+     "skill": [
+      "自由市場經濟"
+     ],
+     "weight": 5
+    },
+    {
+     "id": 44,
+     "correct": "C",
+     "skill": [
+      "中國史演變"
+     ],
+     "weight": 5
+    },
+    {
+     "id": 45,
+     "correct": "C",
+     "skill": [
+      "近代國際局勢"
+     ],
+     "weight": 5
+    },
+    {
+     "id": 46,
+     "correct": "B",
+     "skill": [
+      "地球氣候"
+     ],
+     "weight": 5
+    },
+    {
+     "id": 47,
+     "correct": "B",
+     "skill": [
+      "一二次世界大戰"
+     ],
+     "weight": 5
+    },
+    {
+     "id": 48,
+     "correct": "B",
+     "skill": [
+      "臺灣史的變遷"
+     ],
+     "weight": 5
+    },
+    {
+     "id": 49,
+     "correct": "C",
+     "skill": [
+      "自然災害"
+     ],
+     "weight": 5
+    },
+    {
+     "id": 50,
+     "correct": "B",
+     "skill": [
+      "地圖判別"
+     ],
+     "weight": 5
+    },
+    {
+     "id": 51,
+     "correct": "C",
+     "skill": [
+      "性別平權與家庭"
+     ],
+     "weight": 5
+    },
+    {
+     "id": 52,
+     "correct": "C",
+     "skill": [
+      "自然災害"
+     ],
+     "weight": 5
+    },
+    {
+     "id": 53,
+     "correct": "C",
+     "skill": [
+      "全球化國際社會"
+     ],
+     "weight": 5
+    },
+    {
+     "id": 54,
+     "correct": "D",
+     "skill": [
+      "區位認識"
+     ],
+     "weight": 5
+    },
+    {
+     "id": 55,
+     "correct": "D",
+     "skill": [
+      "全球化國際社會"
+     ],
+     "weight": 5
+    },
+    {
+     "id": 56,
+     "correct": "B",
+     "skill": [
+      "洋流與季風"
+     ],
+     "weight": 5
+    },
+    {
+     "id": 57,
+     "correct": "C",
+     "skill": [
+      "近代國際局勢"
+     ],
+     "weight": 5
+    },
+    {
+     "id": 58,
+     "correct": "B",
+     "skill": [
+      "環境與永續"
+     ],
+     "weight": 5
+    },
+    {
+     "id": 59,
+     "correct": "C",
+     "skill": [
+      "區位認識"
+     ],
+     "weight": 5
+    }
+   ]
+  }
+ },
+ "國三全冊模考": {
+  "gradeBands": {
+   "國文": {
+    "A++": 40,
+    "A+": 38,
+    "A": 36,
+    "B++": 32,
+    "B+": 28,
+    "B": 18,
+    "C": 0
+   },
+   "英文": {
+    "A++": 43,
+    "A+": 42,
+    "A": 39,
+    "B++": 36,
+    "B+": 32,
+    "B": 20,
+    "C": 0
+   },
+   "自然": {
+    "A++": 48,
+    "A+": 46,
+    "A": 43,
+    "B++": 36,
+    "B+": 29,
+    "B": 18,
+    "C": 0
+   },
+   "社會": {
+    "A++": 52,
+    "A+": 50,
+    "A": 48,
+    "B++": 41,
+    "B+": 35,
+    "B": 22,
+    "C": 0
+   },
+   "數學": {
+    "mode": "nonChoiceCorrect",
+    "nonChoiceBands": {
+     "0": {
+      "A++": 26,
+      "A+": 26,
+      "A": 23,
+      "B++": 20,
+      "B+": 17,
+      "B": 12,
+      "C": 0
+     },
+     "1": {
+      "A++": 26,
+      "A+": 25,
+      "A": 22,
+      "B++": 19,
+      "B+": 16,
+      "B": 11,
+      "C": 0
+     },
+     "2": {
+      "A++": 26,
+      "A+": 24,
+      "A": 21,
+      "B++": 18,
+      "B+": 16,
+      "B": 10,
+      "C": 0
+     },
+     "3": {
+      "A++": 25,
+      "A+": 23,
+      "A": 21,
+      "B++": 18,
+      "B+": 15,
+      "B": 10,
+      "C": 0
+     },
+     "4": {
+      "A++": 24,
+      "A+": 23,
+      "A": 20,
+      "B++": 17,
+      "B+": 14,
+      "B": 9,
+      "C": 0
+     },
+     "5": {
+      "A++": 24,
+      "A+": 22,
+      "A": 19,
+      "B++": 16,
+      "B+": 14,
+      "B": 8,
+      "C": 0
+     },
+     "6": {
+      "A++": 23,
+      "A+": 21,
+      "A": 18,
+      "B++": 16,
+      "B+": 13,
+      "B": 7,
+      "C": 0
+     }
+    }
+   }
+  },
+  "國文": {
+   "maxScore": 210,
+   "skills": [
+    "基本詞義",
+    "語句的種類",
+    "語法的類型",
+    "節氣氣候",
+    "字音字形",
+    "修辭手法",
+    "成語應用",
+    "書信格式",
+    "標點符號",
+    "古典詩詞賞析",
+    "文意文閱讀測驗",
+    "分析圖表文章",
+    "散文閱讀理解",
+    "古典詩詞格式",
+    "現代詩詞解讀"
+   ],
+   "questions": [
+    {
+     "id": 1,
+     "correct": "C",
+     "skill": [
+      "字音字形"
+     ],
+     "weight": 5
+    },
+    {
+     "id": 2,
+     "correct": "D",
+     "skill": [
+      "字音字形"
+     ],
+     "weight": 5
+    },
+    {
+     "id": 3,
+     "correct": "B",
+     "skill": [
+      "語法的類型"
+     ],
+     "weight": 5
+    },
+    {
+     "id": 4,
+     "correct": "D",
+     "skill": [
+      "現代詩詞解讀"
+     ],
+     "weight": 5
+    },
+    {
+     "id": 5,
+     "correct": "C",
+     "skill": [
+      "修辭手法"
+     ],
+     "weight": 5
+    },
+    {
+     "id": 6,
+     "correct": "A",
+     "skill": [
+      "散文閱讀理解"
+     ],
+     "weight": 5
+    },
+    {
+     "id": 7,
+     "correct": "A",
+     "skill": [
+      "修辭手法"
+     ],
+     "weight": 5
+    },
+    {
+     "id": 8,
+     "correct": "A",
+     "skill": [
+      "成語應用"
+     ],
+     "weight": 5
+    },
+    {
+     "id": 9,
+     "correct": "C",
+     "skill": [
+      "分析圖表文章"
+     ],
+     "weight": 5
+    },
+    {
+     "id": 10,
+     "correct": "D",
+     "skill": [
+      "基本詞義"
+     ],
+     "weight": 5
+    },
+    {
+     "id": 11,
+     "correct": "C",
+     "skill": [
+      "成語應用"
+     ],
+     "weight": 5
+    },
+    {
+     "id": 12,
+     "correct": "D",
+     "skill": [
+      "散文閱讀理解"
+     ],
+     "weight": 5
+    },
+    {
+     "id": 13,
+     "correct": "A",
+     "skill": [
+      "分析圖表文章"
+     ],
+     "weight": 5
+    },
+    {
+     "id": 14,
+     "correct": "A",
+     "skill": [
+      "散文閱讀理解"
+     ],
+     "weight": 5
+    },
+    {
+     "id": 15,
+     "correct": "B",
+     "skill": [
+      "現代詩詞解讀"
+     ],
+     "weight": 5
+    },
+    {
+     "id": 16,
+     "correct": "C",
+     "skill": [
+      "節氣氣候"
+     ],
+     "weight": 5
+    },
+    {
+     "id": 17,
+     "correct": "B",
+     "skill": [
+      "分析圖表文章"
+     ],
+     "weight": 5
+    },
+    {
+     "id": 18,
+     "correct": "C",
+     "skill": [
+      "現代詩詞解讀"
+     ],
+     "weight": 5
+    },
+    {
+     "id": 19,
+     "correct": "D",
+     "skill": [
+      "現代詩詞解讀"
+     ],
+     "weight": 5
+    },
+    {
+     "id": 20,
+     "correct": "B",
+     "skill": [
+      "文意文閱讀測驗"
+     ],
+     "weight": 5
+    },
+    {
+     "id": 21,
+     "correct": "A",
+     "skill": [
+      "文意文閱讀測驗"
+     ],
+     "weight": 5
+    },
+    {
+     "id": 22,
+     "correct": "D",
+     "skill": [
+      "古典詩詞賞析"
+     ],
+     "weight": 5
+    },
+    {
+     "id": 23,
+     "correct": "C",
+     "skill": [
+      "文意文閱讀測驗"
+     ],
+     "weight": 5
+    },
+    {
+     "id": 24,
+     "correct": "D",
+     "skill": [
+      "文意文閱讀測驗"
+     ],
+     "weight": 5
+    },
+    {
+     "id": 25,
+     "correct": "C",
+     "skill": [
+      "古典詩詞賞析"
+     ],
+     "weight": 5
+    },
+    {
+     "id": 26,
+     "correct": "A",
+     "skill": [
+      "散文閱讀理解"
+     ],
+     "weight": 5
+    },
+    {
+     "id": 27,
+     "correct": "D",
+     "skill": [
+      "散文閱讀理解"
+     ],
+     "weight": 5
+    },
+    {
+     "id": 28,
+     "correct": "A",
+     "skill": [
+      "分析圖表文章"
+     ],
+     "weight": 5
+    },
+    {
+     "id": 29,
+     "correct": "A",
+     "skill": [
+      "分析圖表文章"
+     ],
+     "weight": 5
+    },
+    {
+     "id": 30,
+     "correct": "C",
+     "skill": [
+      "散文閱讀理解"
+     ],
+     "weight": 5
+    },
+    {
+     "id": 31,
+     "correct": "C",
+     "skill": [
+      "分析圖表文章"
+     ],
+     "weight": 5
+    },
+    {
+     "id": 32,
+     "correct": "D",
+     "skill": [
+      "散文閱讀理解"
+     ],
+     "weight": 5
+    },
+    {
+     "id": 33,
+     "correct": "C",
+     "skill": [
+      "分析圖表文章"
+     ],
+     "weight": 5
+    },
+    {
+     "id": 34,
+     "correct": "D",
+     "skill": [
+      "成語應用"
+     ],
+     "weight": 5
+    },
+    {
+     "id": 35,
+     "correct": "B",
+     "skill": [
+      "散文閱讀理解"
+     ],
+     "weight": 5
+    },
+    {
+     "id": 36,
+     "correct": "C",
+     "skill": [
+      "分析圖表文章"
+     ],
+     "weight": 5
+    },
+    {
+     "id": 37,
+     "correct": "B",
+     "skill": [
+      "現代詩詞解讀"
+     ],
+     "weight": 5
+    },
+    {
+     "id": 38,
+     "correct": "C",
+     "skill": [
+      "基本詞義"
+     ],
+     "weight": 5
+    },
+    {
+     "id": 39,
+     "correct": "C",
+     "skill": [
+      "分析圖表文章"
+     ],
+     "weight": 5
+    },
+    {
+     "id": 40,
+     "correct": "D",
+     "skill": [
+      "古典詩詞賞析"
+     ],
+     "weight": 5
+    },
+    {
+     "id": 41,
+     "correct": "B",
+     "skill": [
+      "文意文閱讀測驗"
+     ],
+     "weight": 5
+    },
+    {
+     "id": 42,
+     "correct": "A",
+     "skill": [
+      "分析圖表文章"
+     ],
+     "weight": 5
+    }
+   ]
+  },
+  "英文": {
+   "maxScore": 220,
+   "skills": [
+    "句型結構",
+    "常用介詞",
+    "動詞時態",
+    "基本字彙",
+    "冠詞使用規則",
+    "名詞單複數",
+    "形容詞與副詞",
+    "比較級與最高級",
+    "連接詞種類",
+    "疑問句結構",
+    "否定句型結構",
+    "關係代名詞",
+    "文章閱讀理解",
+    "助動詞使用規則",
+    "動名詞應用"
+   ],
+   "questions": [
+    {
+     "id": 1,
+     "correct": "B",
+     "skill": [
+      "句型結構"
+     ],
+     "weight": 5
+    },
+    {
+     "id": 2,
+     "correct": "A",
+     "skill": [
+      "動詞時態"
+     ],
+     "weight": 5
+    },
+    {
+     "id": 3,
+     "correct": "D",
+     "skill": [
+      "句型結構"
+     ],
+     "weight": 5
+    },
+    {
+     "id": 4,
+     "correct": "A",
+     "skill": [
+      "句型結構"
+     ],
+     "weight": 5
+    },
+    {
+     "id": 5,
+     "correct": "A",
+     "skill": [
+      "句型結構"
+     ],
+     "weight": 5
+    },
+    {
+     "id": 6,
+     "correct": "A",
+     "skill": [
+      "句型結構"
+     ],
+     "weight": 5
+    },
+    {
+     "id": 7,
+     "correct": "A",
+     "skill": [
+      "連接詞種類"
+     ],
+     "weight": 5
+    },
+    {
+     "id": 8,
+     "correct": "B",
+     "skill": [
+      "動詞時態"
+     ],
+     "weight": 5
+    },
+    {
+     "id": 9,
+     "correct": "D",
+     "skill": [
+      "句型結構"
+     ],
+     "weight": 5
+    },
+    {
+     "id": 10,
+     "correct": "C",
+     "skill": [
+      "句型結構"
+     ],
+     "weight": 5
+    },
+    {
+     "id": 11,
+     "correct": "C",
+     "skill": [
+      "關係代名詞"
+     ],
+     "weight": 5
+    },
+    {
+     "id": 12,
+     "correct": "D",
+     "skill": [
+      "常用介詞"
+     ],
+     "weight": 5
+    },
+    {
+     "id": 13,
+     "correct": "B",
+     "skill": [
+      "動詞時態"
+     ],
+     "weight": 5
+    },
+    {
+     "id": 14,
+     "correct": "B",
+     "skill": [
+      "句型結構"
+     ],
+     "weight": 5
+    },
+    {
+     "id": 15,
+     "correct": "D",
+     "skill": [
+      "句型結構"
+     ],
+     "weight": 5
+    },
+    {
+     "id": 16,
+     "correct": "D",
+     "skill": [
+      "動詞時態"
+     ],
+     "weight": 5
+    },
+    {
+     "id": 17,
+     "correct": "D",
+     "skill": [
+      "句型結構"
+     ],
+     "weight": 5
+    },
+    {
+     "id": 18,
+     "correct": "D",
+     "skill": [
+      "句型結構"
+     ],
+     "weight": 5
+    },
+    {
+     "id": 19,
+     "correct": "B",
+     "skill": [
+      "文章閱讀理解"
+     ],
+     "weight": 5
+    },
+    {
+     "id": 20,
+     "correct": "D",
+     "skill": [
+      "文章閱讀理解"
+     ],
+     "weight": 5
+    },
+    {
+     "id": 21,
+     "correct": "D",
+     "skill": [
+      "文章閱讀理解"
+     ],
+     "weight": 5
+    },
+    {
+     "id": 22,
+     "correct": "D",
+     "skill": [
+      "文章閱讀理解"
+     ],
+     "weight": 5
+    },
+    {
+     "id": 23,
+     "correct": "A",
+     "skill": [
+      "文章閱讀理解"
+     ],
+     "weight": 5
+    },
+    {
+     "id": 24,
+     "correct": "B",
+     "skill": [
+      "文章閱讀理解"
+     ],
+     "weight": 5
+    },
+    {
+     "id": 25,
+     "correct": "B",
+     "skill": [
+      "文章閱讀理解"
+     ],
+     "weight": 5
+    },
+    {
+     "id": 26,
+     "correct": "C",
+     "skill": [
+      "文章閱讀理解"
+     ],
+     "weight": 5
+    },
+    {
+     "id": 27,
+     "correct": "B",
+     "skill": [
+      "文章閱讀理解"
+     ],
+     "weight": 5
+    },
+    {
+     "id": 28,
+     "correct": "C",
+     "skill": [
+      "文章閱讀理解"
+     ],
+     "weight": 5
+    },
+    {
+     "id": 29,
+     "correct": "A",
+     "skill": [
+      "文章閱讀理解"
+     ],
+     "weight": 5
+    },
+    {
+     "id": 30,
+     "correct": "A",
+     "skill": [
+      "文章閱讀理解"
+     ],
+     "weight": 5
+    },
+    {
+     "id": 31,
+     "correct": "C",
+     "skill": [
+      "文章閱讀理解"
+     ],
+     "weight": 5
+    },
+    {
+     "id": 32,
+     "correct": "B",
+     "skill": [
+      "文章閱讀理解"
+     ],
+     "weight": 5
+    },
+    {
+     "id": 33,
+     "correct": "C",
+     "skill": [
+      "文章閱讀理解"
+     ],
+     "weight": 5
+    },
+    {
+     "id": 34,
+     "correct": "B",
+     "skill": [
+      "文章閱讀理解"
+     ],
+     "weight": 5
+    },
+    {
+     "id": 35,
+     "correct": "D",
+     "skill": [
+      "文章閱讀理解"
+     ],
+     "weight": 5
+    },
+    {
+     "id": 36,
+     "correct": "C",
+     "skill": [
+      "文章閱讀理解"
+     ],
+     "weight": 5
+    },
+    {
+     "id": 37,
+     "correct": "D",
+     "skill": [
+      "文章閱讀理解"
+     ],
+     "weight": 5
+    },
+    {
+     "id": 38,
+     "correct": "B",
+     "skill": [
+      "文章閱讀理解"
+     ],
+     "weight": 5
+    },
+    {
+     "id": 39,
+     "correct": "A",
+     "skill": [
+      "文章閱讀理解"
+     ],
+     "weight": 5
+    },
+    {
+     "id": 40,
+     "correct": "C",
+     "skill": [
+      "文章閱讀理解"
+     ],
+     "weight": 5
+    },
+    {
+     "id": 41,
+     "correct": "B",
+     "skill": [
+      "文章閱讀理解"
+     ],
+     "weight": 5
+    },
+    {
+     "id": 42,
+     "correct": "C",
+     "skill": [
+      "文章閱讀理解"
+     ],
+     "weight": 5
+    },
+    {
+     "id": 43,
+     "correct": "C",
+     "skill": [
+      "文章閱讀理解"
+     ],
+     "weight": 5
+    },
+    {
+     "id": 44,
+     "correct": "D",
+     "skill": [
+      "文章閱讀理解"
+     ],
+     "weight": 5
+    }
+   ]
+  },
+  "數學": {
+   "maxScore": 125,
+   "skills": [
+    "數的運算",
+    "多項式化簡運算",
+    "方程式列式",
+    "比例性質",
+    "等式不等式求解",
+    "函數圖形判別",
+    "數列規則",
+    "角的性質",
+    "平行線判別",
+    "四邊形性質",
+    "尺規作圖",
+    "全等與相似",
+    "平面座標",
+    "圓的性質",
+    "三心應用",
+    "圖表判定",
+    "統計資料",
+    "機率計算",
+    "因倍質數"
+   ],
+   "questions": [
+    {
+     "id": 1,
+     "correct": "C",
+     "skill": [
+      "數的運算"
+     ],
+     "weight": 5
+    },
+    {
+     "id": 2,
+     "correct": "A",
+     "skill": [
+      "數的運算"
+     ],
+     "weight": 5
+    },
+    {
+     "id": 3,
+     "correct": "C",
+     "skill": [
+      "因倍質數"
+     ],
+     "weight": 5
+    },
+    {
+     "id": 4,
+     "correct": "A",
+     "skill": [
+      "等式不等式求解"
+     ],
+     "weight": 5
+    },
+    {
+     "id": 5,
+     "correct": "C",
+     "skill": [
+      "統計資料"
+     ],
+     "weight": 5
+    },
+    {
+     "id": 6,
+     "correct": "C",
+     "skill": [
+      "機率計算"
+     ],
+     "weight": 5
+    },
+    {
+     "id": 7,
+     "correct": "B",
+     "skill": [
+      "多項式化簡運算"
+     ],
+     "weight": 5
+    },
+    {
+     "id": 8,
+     "correct": "B",
+     "skill": [
+      "數列規則"
+     ],
+     "weight": 5
+    },
+    {
+     "id": 9,
+     "correct": "B",
+     "skill": [
+      "比例性質"
+     ],
+     "weight": 5
+    },
+    {
+     "id": 10,
+     "correct": "D",
+     "skill": [
+      "圖表判定"
+     ],
+     "weight": 5
+    },
+    {
+     "id": 11,
+     "correct": "C",
+     "skill": [
+      "數的運算",
+      "平面座標"
+     ],
+     "weight": 5
+    },
+    {
+     "id": 12,
+     "correct": "D",
+     "skill": [
+      "數的運算",
+      "角的性質"
+     ],
+     "weight": 5
+    },
+    {
+     "id": 13,
+     "correct": "B",
+     "skill": [
+      "角的性質"
+     ],
+     "weight": 5
+    },
+    {
+     "id": 14,
+     "correct": "A",
+     "skill": [
+      "數列規則"
+     ],
+     "weight": 5
+    },
+    {
+     "id": 15,
+     "correct": "A",
+     "skill": [
+      "尺規作圖",
+      "角的性質"
+     ],
+     "weight": 5
+    },
+    {
+     "id": 16,
+     "correct": "A",
+     "skill": [
+      "等式不等式求解"
+     ],
+     "weight": 5
+    },
+    {
+     "id": 17,
+     "correct": "D",
+     "skill": [
+      "四邊形性質"
+     ],
+     "weight": 5
+    },
+    {
+     "id": 18,
+     "correct": "B",
+     "skill": [
+      "平面座標",
+      "圖表判定"
+     ],
+     "weight": 5
+    },
+    {
+     "id": 19,
+     "correct": "B",
+     "skill": [
+      "圓的性質"
+     ],
+     "weight": 5
+    },
+    {
+     "id": 20,
+     "correct": "C",
+     "skill": [
+      "比例性質"
+     ],
+     "weight": 5
+    },
+    {
+     "id": 21,
+     "correct": "D",
+     "skill": [
+      "四邊形性質"
+     ],
+     "weight": 5
+    },
+    {
+     "id": 22,
+     "correct": "B",
+     "skill": [
+      "函數圖形判別"
+     ],
+     "weight": 5
+    },
+    {
+     "id": 23,
+     "correct": "D",
+     "skill": [
+      "三心應用"
+     ],
+     "weight": 5
+    },
+    {
+     "id": 24,
+     "correct": "A",
+     "skill": [
+      "等式不等式求解"
+     ],
+     "weight": 5
+    },
+    {
+     "id": 25,
+     "correct": "D",
+     "skill": [
+      "方程式列式"
+     ],
+     "weight": 5
+    }
+   ]
+  },
+  "自然": {
+   "maxScore": 250,
+   "skills": [
+    "牛頓運動定律",
+    "速度加速度",
+    "電磁力",
+    "基本電學",
+    "力與摩擦力",
+    "壓力與浮力",
+    "物質三態變化",
+    "元素化合物",
+    "聲波與光",
+    "原子結構與特性",
+    "化學、物理變化",
+    "化學反應方程式",
+    "原子量分子量",
+    "氧化還原與酸鹼",
+    "水溶液與濃度",
+    "細胞功能與結構",
+    "基因與遺傳",
+    "生物的分類",
+    "人體器官功能",
+    "生態與食物鏈",
+    "地球結構與層次",
+    "岩石種類與形成",
+    "天氣與氣候",
+    "地球月亮與太陽",
+    "水,碳,氧的循環"
+   ],
+   "questions": [
+    {
+     "id": 1,
+     "correct": "A",
+     "skill": [
+      "生物的分類"
+     ],
+     "weight": 5
+    },
+    {
+     "id": 2,
+     "correct": "D",
+     "skill": [
+      "細胞功能與結構"
+     ],
+     "weight": 5
+    },
+    {
+     "id": 3,
+     "correct": "D",
+     "skill": [
+      "生態與食物鏈"
+     ],
+     "weight": 5
+    },
+    {
+     "id": 4,
+     "correct": "C",
+     "skill": [
+      "地球結構與層次"
+     ],
+     "weight": 5
+    },
+    {
+     "id": 5,
+     "correct": "A",
+     "skill": [
+      "岩石種類與形成"
+     ],
+     "weight": 5
+    },
+    {
+     "id": 6,
+     "correct": "A",
+     "skill": [
+      "水溶液與濃度"
+     ],
+     "weight": 5
+    },
+    {
+     "id": 7,
+     "correct": "B",
+     "skill": [
+      "氧化還原與酸鹼"
+     ],
+     "weight": 5
+    },
+    {
+     "id": 8,
+     "correct": "C",
+     "skill": [
+      "基因與遺傳"
+     ],
+     "weight": 5
+    },
+    {
+     "id": 9,
+     "correct": "C",
+     "skill": [
+      "天氣與氣候"
+     ],
+     "weight": 5
+    },
+    {
+     "id": 10,
+     "correct": "B",
+     "skill": [
+      "地球月亮與太陽"
+     ],
+     "weight": 5
+    },
+    {
+     "id": 11,
+     "correct": "D",
+     "skill": [
+      "速度加速度"
+     ],
+     "weight": 5
+    },
+    {
+     "id": 12,
+     "correct": "A",
+     "skill": [
+      "化學反應方程式"
+     ],
+     "weight": 5
+    },
+    {
+     "id": 13,
+     "correct": "B",
+     "skill": [
+      "壓力與浮力"
+     ],
+     "weight": 5
+    },
+    {
+     "id": 14,
+     "correct": "D",
+     "skill": [
+      "地球結構與層次"
+     ],
+     "weight": 5
+    },
+    {
+     "id": 15,
+     "correct": "D",
+     "skill": [
+      "原子結構與特性"
+     ],
+     "weight": 5
+    },
+    {
+     "id": 16,
+     "correct": "A",
+     "skill": [
+      "基因與遺傳"
+     ],
+     "weight": 5
+    },
+    {
+     "id": 17,
+     "correct": "C",
+     "skill": [
+      "地球結構與層次"
+     ],
+     "weight": 5
+    },
+    {
+     "id": 18,
+     "correct": "C",
+     "skill": [
+      "人體器官功能"
+     ],
+     "weight": 5
+    },
+    {
+     "id": 19,
+     "correct": "B",
+     "skill": [
+      "聲波與光"
+     ],
+     "weight": 5
+    },
+    {
+     "id": 20,
+     "correct": "C",
+     "skill": [
+      "細胞功能與結構"
+     ],
+     "weight": 5
+    },
+    {
+     "id": 21,
+     "correct": "B",
+     "skill": [
+      "基本電學"
+     ],
+     "weight": 5
+    },
+    {
+     "id": 22,
+     "correct": "C",
+     "skill": [
+      "物質三態變化"
+     ],
+     "weight": 5
+    },
+    {
+     "id": 23,
+     "correct": "D",
+     "skill": [
+      "水溶液與濃度"
+     ],
+     "weight": 5
+    },
+    {
+     "id": 24,
+     "correct": "C",
+     "skill": [
+      "人體器官功能"
+     ],
+     "weight": 5
+    },
+    {
+     "id": 25,
+     "correct": "D",
+     "skill": [
+      "地球月亮與太陽"
+     ],
+     "weight": 5
+    },
+    {
+     "id": 26,
+     "correct": "A",
+     "skill": [
+      "天氣與氣候"
+     ],
+     "weight": 5
+    },
+    {
+     "id": 27,
+     "correct": "B",
+     "skill": [
+      "生物的分類"
+     ],
+     "weight": 5
+    },
+    {
+     "id": 28,
+     "correct": "C",
+     "skill": [
+      "物質三態變化"
+     ],
+     "weight": 5
+    },
+    {
+     "id": 29,
+     "correct": "B",
+     "skill": [
+      "電磁力"
+     ],
+     "weight": 5
+    },
+    {
+     "id": 30,
+     "correct": "A",
+     "skill": [
+      "物質三態變化"
+     ],
+     "weight": 5
+    },
+    {
+     "id": 31,
+     "correct": "D",
+     "skill": [
+      "基本電學"
+     ],
+     "weight": 5
+    },
+    {
+     "id": 32,
+     "correct": "A",
+     "skill": [
+      "聲波與光"
+     ],
+     "weight": 5
+    },
+    {
+     "id": 33,
+     "correct": "C",
+     "skill": [
+      "元素化合物"
+     ],
+     "weight": 5
+    },
+    {
+     "id": 34,
+     "correct": "A",
+     "skill": [
+      "化學反應方程式"
+     ],
+     "weight": 5
+    },
+    {
+     "id": 35,
+     "correct": "D",
+     "skill": [
+      "電磁力"
+     ],
+     "weight": 5
+    },
+    {
+     "id": 36,
+     "correct": "B",
+     "skill": [
+      "地球月亮與太陽"
+     ],
+     "weight": 5
+    },
+    {
+     "id": 37,
+     "correct": "B",
+     "skill": [
+      "地球月亮與太陽"
+     ],
+     "weight": 5
+    },
+    {
+     "id": 38,
+     "correct": "B",
+     "skill": [
+      "氧化還原與酸鹼"
+     ],
+     "weight": 5
+    },
+    {
+     "id": 39,
+     "correct": "B",
+     "skill": [
+      "生物的分類"
+     ],
+     "weight": 5
+    },
+    {
+     "id": 40,
+     "correct": "B",
+     "skill": [
+      "力與摩擦力"
+     ],
+     "weight": 5
+    },
+    {
+     "id": 41,
+     "correct": "C",
+     "skill": [
+      "水溶液與濃度"
+     ],
+     "weight": 5
+    },
+    {
+     "id": 42,
+     "correct": "A",
+     "skill": [
+      "氧化還原與酸鹼"
+     ],
+     "weight": 5
+    },
+    {
+     "id": 43,
+     "correct": "A",
+     "skill": [
+      "氧化還原與酸鹼"
+     ],
+     "weight": 5
+    },
+    {
+     "id": 44,
+     "correct": "D",
+     "skill": [
+      "生物的分類"
+     ],
+     "weight": 5
+    },
+    {
+     "id": 45,
+     "correct": "A",
+     "skill": [
+      "牛頓運動定律"
+     ],
+     "weight": 5
+    },
+    {
+     "id": 46,
+     "correct": "D",
+     "skill": [
+      "水,碳,氧的循環"
+     ],
+     "weight": 5
+    },
+    {
+     "id": 47,
+     "correct": "C",
+     "skill": [
+      "生態與食物鏈"
+     ],
+     "weight": 5
+    },
+    {
+     "id": 48,
+     "correct": "B",
+     "skill": [
+      "基本電學"
+     ],
+     "weight": 5
+    },
+    {
+     "id": 49,
+     "correct": "A",
+     "skill": [
+      "生物的分類"
+     ],
+     "weight": 5
+    },
+    {
+     "id": 50,
+     "correct": "D",
+     "skill": [
+      "生物的分類"
+     ],
+     "weight": 5
+    }
+   ]
+  },
+  "社會": {
+   "maxScore": 270,
+   "skills": [
+    "區位認識",
+    "地球氣候",
+    "地形分布",
+    "文化特色",
+    "洋流與季風",
+    "自然災害",
+    "都市化人口組成",
+    "地圖判別",
+    "環境與永續",
+    "臺灣史的變遷",
+    "中國史演變",
+    "近代國民國史",
+    "世界古文明",
+    "普世宗教發展",
+    "歐洲革命",
+    "世界列強的殖民",
+    "一二次世界大戰",
+    "近代國際局勢",
+    "公民與權利",
+    "性別平權與家庭",
+    "多元文化與社會",
+    "國家的組織",
+    "政府的功能",
+    "法律與人權",
+    "自由市場經濟",
+    "金融與貨幣",
+    "全球化國際社會"
+   ],
+   "questions": [
+    {
+     "id": 1,
+     "correct": "A",
+     "skill": [
+      "地形分布"
+     ],
+     "weight": 5
+    },
+    {
+     "id": 2,
+     "correct": "D",
+     "skill": [
+      "歐洲革命"
+     ],
+     "weight": 5
+    },
+    {
+     "id": 3,
+     "correct": "B",
+     "skill": [
+      "世界古文明"
+     ],
+     "weight": 5
+    },
+    {
+     "id": 4,
+     "correct": "B",
+     "skill": [
+      "法律與人權"
+     ],
+     "weight": 5
+    },
+    {
+     "id": 5,
+     "correct": "C",
+     "skill": [
+      "臺灣史的變遷"
+     ],
+     "weight": 5
+    },
+    {
+     "id": 6,
+     "correct": "C",
+     "skill": [
+      "世界古文明"
+     ],
+     "weight": 5
+    },
+    {
+     "id": 7,
+     "correct": "C",
+     "skill": [
+      "國家的組織"
+     ],
+     "weight": 5
+    },
+    {
+     "id": 8,
+     "correct": "B",
+     "skill": [
+      "臺灣史的變遷"
+     ],
+     "weight": 5
+    },
+    {
+     "id": 9,
+     "correct": "A",
+     "skill": [
+      "國家的組織"
+     ],
+     "weight": 5
+    },
+    {
+     "id": 10,
+     "correct": "D",
+     "skill": [
+      "地形分布"
+     ],
+     "weight": 5
+    },
+    {
+     "id": 11,
+     "correct": "C",
+     "skill": [
+      "自由市場經濟"
+     ],
+     "weight": 5
+    },
+    {
+     "id": 12,
+     "correct": "B",
+     "skill": [
+      "金融與貨幣"
+     ],
+     "weight": 5
+    },
+    {
+     "id": 13,
+     "correct": "A",
+     "skill": [
+      "地圖判別"
+     ],
+     "weight": 5
+    },
+    {
+     "id": 14,
+     "correct": "D",
+     "skill": [
+      "法律與人權"
+     ],
+     "weight": 5
+    },
+    {
+     "id": 15,
+     "correct": "C",
+     "skill": [
+      "世界古文明"
+     ],
+     "weight": 5
+    },
+    {
+     "id": 16,
+     "correct": "C",
+     "skill": [
+      "地形分布"
+     ],
+     "weight": 5
+    },
+    {
+     "id": 17,
+     "correct": "D",
+     "skill": [
+      "地球氣候"
+     ],
+     "weight": 5
+    },
+    {
+     "id": 18,
+     "correct": "B",
+     "skill": [
+      "臺灣史的變遷"
+     ],
+     "weight": 5
+    },
+    {
+     "id": 19,
+     "correct": "A",
+     "skill": [
+      "國家的組織"
+     ],
+     "weight": 5
+    },
+    {
+     "id": 20,
+     "correct": "C",
+     "skill": [
+      "歐洲革命"
+     ],
+     "weight": 5
+    },
+    {
+     "id": 21,
+     "correct": "A",
+     "skill": [
+      "地球氣候"
+     ],
+     "weight": 5
+    },
+    {
+     "id": 22,
+     "correct": "B",
+     "skill": [
+      "中國史演變"
+     ],
+     "weight": 5
+    },
+    {
+     "id": 23,
+     "correct": "D",
+     "skill": [
+      "政府的功能"
+     ],
+     "weight": 5
+    },
+    {
+     "id": 24,
+     "correct": "D",
+     "skill": [
+      "洋流與季風"
+     ],
+     "weight": 5
+    },
+    {
+     "id": 25,
+     "correct": "B",
+     "skill": [
+      "國家的組織"
+     ],
+     "weight": 5
+    },
+    {
+     "id": 26,
+     "correct": "A",
+     "skill": [
+      "多元文化與社會"
+     ],
+     "weight": 5
+    },
+    {
+     "id": 27,
+     "correct": "A",
+     "skill": [
+      "臺灣史的變遷"
+     ],
+     "weight": 5
+    },
+    {
+     "id": 28,
+     "correct": "D",
+     "skill": [
+      "區位認識"
+     ],
+     "weight": 5
+    },
+    {
+     "id": 29,
+     "correct": "A",
+     "skill": [
+      "歐洲革命"
+     ],
+     "weight": 5
+    },
+    {
+     "id": 30,
+     "correct": "C",
+     "skill": [
+      "地圖判別"
+     ],
+     "weight": 5
+    },
+    {
+     "id": 31,
+     "correct": "C",
+     "skill": [
+      "歐洲革命"
+     ],
+     "weight": 5
+    },
+    {
+     "id": 32,
+     "correct": "B",
+     "skill": [
+      "地球氣候"
+     ],
+     "weight": 5
+    },
+    {
+     "id": 33,
+     "correct": "A",
+     "skill": [
+      "世界古文明"
+     ],
+     "weight": 5
+    },
+    {
+     "id": 34,
+     "correct": "D",
+     "skill": [
+      "金融與貨幣"
+     ],
+     "weight": 5
+    },
+    {
+     "id": 35,
+     "correct": "B",
+     "skill": [
+      "自由市場經濟"
+     ],
+     "weight": 5
+    },
+    {
+     "id": 36,
+     "correct": "D",
+     "skill": [
+      "臺灣史的變遷"
+     ],
+     "weight": 5
+    },
+    {
+     "id": 37,
+     "correct": "A",
+     "skill": [
+      "法律與人權"
+     ],
+     "weight": 5
+    },
+    {
+     "id": 38,
+     "correct": "B",
+     "skill": [
+      "自然災害"
+     ],
+     "weight": 5
+    },
+    {
+     "id": 39,
+     "correct": "C",
+     "skill": [
+      "洋流與季風"
+     ],
+     "weight": 5
+    },
+    {
+     "id": 40,
+     "correct": "C",
+     "skill": [
+      "性別平權與家庭"
+     ],
+     "weight": 5
+    },
+    {
+     "id": 41,
+     "correct": "D",
+     "skill": [
+      "文化特色"
+     ],
+     "weight": 5
+    },
+    {
+     "id": 42,
+     "correct": "B",
+     "skill": [
+      "近代國民國史"
+     ],
+     "weight": 5
+    },
+    {
+     "id": 43,
+     "correct": "A",
+     "skill": [
+      "歐洲革命"
+     ],
+     "weight": 5
+    },
+    {
+     "id": 44,
+     "correct": "A",
+     "skill": [
+      "歐洲革命"
+     ],
+     "weight": 5
+    },
+    {
+     "id": 45,
+     "correct": "C",
+     "skill": [
+      "中國史演變"
+     ],
+     "weight": 5
+    },
+    {
+     "id": 46,
+     "correct": "D",
+     "skill": [
+      "多元文化與社會"
+     ],
+     "weight": 5
+    },
+    {
+     "id": 47,
+     "correct": "A",
+     "skill": [
+      "法律與人權"
+     ],
+     "weight": 5
+    },
+    {
+     "id": 48,
+     "correct": "B",
+     "skill": [
+      "國家的組織"
+     ],
+     "weight": 5
+    },
+    {
+     "id": 49,
+     "correct": "C",
+     "skill": [
+      ""
+     ],
+     "weight": 5
+    },
+    {
+     "id": 50,
+     "correct": "A",
+     "skill": [
+      "臺灣史的變遷"
+     ],
+     "weight": 5
+    },
+    {
+     "id": 51,
+     "correct": "B",
+     "skill": [
+      "全球化國際社會"
+     ],
+     "weight": 5
+    },
+    {
+     "id": 52,
+     "correct": "C",
+     "skill": [
+      "區位認識"
+     ],
+     "weight": 5
+    },
+    {
+     "id": 53,
+     "correct": "C",
+     "skill": [
+      "地圖判別"
+     ],
+     "weight": 5
+    },
+    {
+     "id": 54,
+     "correct": "C",
+     "skill": [
+      "地形分布"
+     ],
+     "weight": 5
+    }
+   ]
+  }
+ },
+ "國二學科模擬會考挑戰": {
+  "gradeBands": {
+   "國文": {
+    "A++": 41,
+    "A+": 39,
+    "A": 36,
+    "B++": 32,
+    "B+": 28,
+    "B": 18,
+    "C": 0
+   },
+   "英文": {
+    "A++": 42,
+    "A+": 41,
+    "A": 38,
+    "B++": 33,
+    "B+": 28,
+    "B": 22,
+    "C": 0
+   },
+   "自然": {
+    "A++": 48,
+    "A+": 47,
+    "A": 44,
+    "B++": 37,
+    "B+": 28,
+    "B": 19,
+    "C": 0
+   },
+   "社會": {
+    "A++": 52,
+    "A+": 50,
+    "A": 47,
+    "B++": 41,
+    "B+": 34,
+    "B": 21,
+    "C": 0
+   },
+   "數學": {
+    "mode": "nonChoiceCorrect",
+    "nonChoiceBands": {
+     "0": {
+      "A++": 26,
+      "A+": 26,
+      "A": 23,
+      "B++": 20,
+      "B+": 17,
+      "B": 12,
+      "C": 0
+     },
+     "1": {
+      "A++": 26,
+      "A+": 25,
+      "A": 22,
+      "B++": 19,
+      "B+": 16,
+      "B": 11,
+      "C": 0
+     },
+     "2": {
+      "A++": 26,
+      "A+": 24,
+      "A": 21,
+      "B++": 18,
+      "B+": 16,
+      "B": 10,
+      "C": 0
+     },
+     "3": {
+      "A++": 25,
+      "A+": 23,
+      "A": 21,
+      "B++": 18,
+      "B+": 15,
+      "B": 10,
+      "C": 0
+     },
+     "4": {
+      "A++": 24,
+      "A+": 23,
+      "A": 20,
+      "B++": 17,
+      "B+": 14,
+      "B": 9,
+      "C": 0
+     },
+     "5": {
+      "A++": 24,
+      "A+": 22,
+      "A": 19,
+      "B++": 16,
+      "B+": 14,
+      "B": 8,
+      "C": 0
+     },
+     "6": {
+      "A++": 23,
+      "A+": 21,
+      "A": 18,
+      "B++": 16,
+      "B+": 13,
+      "B": 7,
+      "C": 0
+     }
+    }
+   }
+  },
+  "國文": {
+   "maxScore": 210,
+   "skills": [
+    "基本詞義",
+    "語句的種類",
+    "語法的類型",
+    "節氣氣候",
+    "字音字形",
+    "修辭手法",
+    "成語應用",
+    "書信格式",
+    "標點符號",
+    "古典詩詞賞析",
+    "文意文閱讀測驗",
+    "分析圖表文章",
+    "散文閱讀理解",
+    "古典詩詞格式",
+    "現代詩詞解讀"
+   ],
+   "questions": [
+    {
+     "id": 1,
+     "correct": "D",
+     "skill": [
+      "現代詩詞解讀"
+     ],
+     "weight": 5
+    },
+    {
+     "id": 2,
+     "correct": "C",
+     "skill": [
+      "字音字形"
+     ],
+     "weight": 5
+    },
+    {
+     "id": 3,
+     "correct": "B",
+     "skill": [
+      "語法的類型"
+     ],
+     "weight": 5
+    },
+    {
+     "id": 4,
+     "correct": "B",
+     "skill": [
+      "語句的種類"
+     ],
+     "weight": 5
+    },
+    {
+     "id": 5,
+     "correct": "D",
+     "skill": [
+      "語句的種類"
+     ],
+     "weight": 5
+    },
+    {
+     "id": 6,
+     "correct": "D",
+     "skill": [
+      "字音字形"
+     ],
+     "weight": 5
+    },
+    {
+     "id": 7,
+     "correct": "B",
+     "skill": [
+      "標點符號"
+     ],
+     "weight": 5
+    },
+    {
+     "id": 8,
+     "correct": "A",
+     "skill": [
+      "古典詩詞格式"
+     ],
+     "weight": 5
+    },
+    {
+     "id": 9,
+     "correct": "C",
+     "skill": [
+      "基本詞義"
+     ],
+     "weight": 5
+    },
+    {
+     "id": 10,
+     "correct": "B",
+     "skill": [
+      "節氣氣候"
+     ],
+     "weight": 5
+    },
+    {
+     "id": 11,
+     "correct": "A",
+     "skill": [
+      "修辭手法"
+     ],
+     "weight": 5
+    },
+    {
+     "id": 12,
+     "correct": "D",
+     "skill": [
+      "語句的種類"
+     ],
+     "weight": 5
+    },
+    {
+     "id": 13,
+     "correct": "B",
+     "skill": [
+      "語法的類型"
+     ],
+     "weight": 5
+    },
+    {
+     "id": 14,
+     "correct": "B",
+     "skill": [
+      "字音字形"
+     ],
+     "weight": 5
+    },
+    {
+     "id": 15,
+     "correct": "D",
+     "skill": [
+      "散文閱讀理解"
+     ],
+     "weight": 5
+    },
+    {
+     "id": 16,
+     "correct": "D",
+     "skill": [
+      "散文閱讀理解"
+     ],
+     "weight": 5
+    },
+    {
+     "id": 17,
+     "correct": "C",
+     "skill": [
+      "古典詩詞格式"
+     ],
+     "weight": 5
+    },
+    {
+     "id": 18,
+     "correct": "B",
+     "skill": [
+      "語句的種類"
+     ],
+     "weight": 5
+    },
+    {
+     "id": 19,
+     "correct": "D",
+     "skill": [
+      "文意文閱讀測驗"
+     ],
+     "weight": 5
+    },
+    {
+     "id": 20,
+     "correct": "C",
+     "skill": [
+      "語句的種類"
+     ],
+     "weight": 5
+    },
+    {
+     "id": 21,
+     "correct": "C",
+     "skill": [
+      "語句的種類"
+     ],
+     "weight": 5
+    },
+    {
+     "id": 22,
+     "correct": "C",
+     "skill": [
+      "修辭手法"
+     ],
+     "weight": 5
+    },
+    {
+     "id": 23,
+     "correct": "B",
+     "skill": [
+      "古典詩詞賞析"
+     ],
+     "weight": 5
+    },
+    {
+     "id": 24,
+     "correct": "C",
+     "skill": [
+      "古典詩詞賞析"
+     ],
+     "weight": 5
+    },
+    {
+     "id": 25,
+     "correct": "B",
+     "skill": [
+      "文意文閱讀測驗"
+     ],
+     "weight": 5
+    },
+    {
+     "id": 26,
+     "correct": "B",
+     "skill": [
+      "文意文閱讀測驗"
+     ],
+     "weight": 5
+    },
+    {
+     "id": 27,
+     "correct": "A",
+     "skill": [
+      "文意文閱讀測驗"
+     ],
+     "weight": 5
+    },
+    {
+     "id": 28,
+     "correct": "A",
+     "skill": [
+      "散文閱讀理解"
+     ],
+     "weight": 5
+    },
+    {
+     "id": 29,
+     "correct": "D",
+     "skill": [
+      "散文閱讀理解"
+     ],
+     "weight": 5
+    },
+    {
+     "id": 30,
+     "correct": "B",
+     "skill": [
+      "散文閱讀理解"
+     ],
+     "weight": 5
+    },
+    {
+     "id": 31,
+     "correct": "C",
+     "skill": [
+      "散文閱讀理解"
+     ],
+     "weight": 5
+    },
+    {
+     "id": 32,
+     "correct": "A",
+     "skill": [
+      "散文閱讀理解"
+     ],
+     "weight": 5
+    },
+    {
+     "id": 33,
+     "correct": "D",
+     "skill": [
+      "節氣氣候"
+     ],
+     "weight": 5
+    },
+    {
+     "id": 34,
+     "correct": "D",
+     "skill": [
+      "散文閱讀理解"
+     ],
+     "weight": 5
+    },
+    {
+     "id": 35,
+     "correct": "C",
+     "skill": [
+      "散文閱讀理解"
+     ],
+     "weight": 5
+    },
+    {
+     "id": 36,
+     "correct": "B",
+     "skill": [
+      "散文閱讀理解"
+     ],
+     "weight": 5
+    },
+    {
+     "id": 37,
+     "correct": "A",
+     "skill": [
+      "成語應用"
+     ],
+     "weight": 5
+    },
+    {
+     "id": 38,
+     "correct": "B",
+     "skill": [
+      "文意文閱讀測驗"
+     ],
+     "weight": 5
+    },
+    {
+     "id": 39,
+     "correct": "D",
+     "skill": [
+      "成語應用"
+     ],
+     "weight": 5
+    },
+    {
+     "id": 40,
+     "correct": "A",
+     "skill": [
+      "文意文閱讀測驗"
+     ],
+     "weight": 5
+    },
+    {
+     "id": 41,
+     "correct": "B",
+     "skill": [
+      "文意文閱讀測驗"
+     ],
+     "weight": 5
+    },
+    {
+     "id": 42,
+     "correct": "B",
+     "skill": [
+      "文意文閱讀測驗"
+     ],
+     "weight": 5
+    }
+   ]
+  },
+  "英文": {
+   "maxScore": 215,
+   "skills": [
+    "句型結構",
+    "常用介詞",
+    "動詞時態",
+    "基本字彙",
+    "冠詞使用規則",
+    "名詞單複數",
+    "形容詞與副詞",
+    "比較級與最高級",
+    "連接詞種類",
+    "疑問句結構",
+    "否定句型結構",
+    "關係代名詞",
+    "文章閱讀理解",
+    "助動詞使用規則",
+    "動名詞應用"
+   ],
+   "questions": [
+    {
+     "id": 1,
+     "correct": "A",
+     "skill": [
+      "基本字彙"
+     ],
+     "weight": 5
+    },
+    {
+     "id": 2,
+     "correct": "A",
+     "skill": [
+      "基本字彙"
+     ],
+     "weight": 5
+    },
+    {
+     "id": 3,
+     "correct": "A",
+     "skill": [
+      "句型結構"
+     ],
+     "weight": 5
+    },
+    {
+     "id": 4,
+     "correct": "C",
+     "skill": [
+      "基本字彙"
+     ],
+     "weight": 5
+    },
+    {
+     "id": 5,
+     "correct": "D",
+     "skill": [
+      "常用介詞"
+     ],
+     "weight": 5
+    },
+    {
+     "id": 6,
+     "correct": "C",
+     "skill": [
+      "基本字彙"
+     ],
+     "weight": 5
+    },
+    {
+     "id": 7,
+     "correct": "D",
+     "skill": [
+      "基本字彙"
+     ],
+     "weight": 5
+    },
+    {
+     "id": 8,
+     "correct": "D",
+     "skill": [
+      "基本字彙"
+     ],
+     "weight": 5
+    },
+    {
+     "id": 9,
+     "correct": "A",
+     "skill": [
+      "句型結構"
+     ],
+     "weight": 5
+    },
+    {
+     "id": 10,
+     "correct": "B",
+     "skill": [
+      "基本字彙"
+     ],
+     "weight": 5
+    },
+    {
+     "id": 11,
+     "correct": "B",
+     "skill": [
+      "基本字彙"
+     ],
+     "weight": 5
+    },
+    {
+     "id": 12,
+     "correct": "B",
+     "skill": [
+      "動詞時態"
+     ],
+     "weight": 5
+    },
+    {
+     "id": 13,
+     "correct": "D",
+     "skill": [
+      "基本字彙"
+     ],
+     "weight": 5
+    },
+    {
+     "id": 14,
+     "correct": "D",
+     "skill": [
+      "句型結構"
+     ],
+     "weight": 5
+    },
+    {
+     "id": 15,
+     "correct": "C",
+     "skill": [
+      "基本字彙"
+     ],
+     "weight": 5
+    },
+    {
+     "id": 16,
+     "correct": "A",
+     "skill": [
+      "基本字彙"
+     ],
+     "weight": 5
+    },
+    {
+     "id": 17,
+     "correct": "B",
+     "skill": [
+      "疑問句結構"
+     ],
+     "weight": 5
+    },
+    {
+     "id": 18,
+     "correct": "C",
+     "skill": [
+      "句型結構"
+     ],
+     "weight": 5
+    },
+    {
+     "id": 19,
+     "correct": "D",
+     "skill": [
+      "基本字彙"
+     ],
+     "weight": 5
+    },
+    {
+     "id": 20,
+     "correct": "B",
+     "skill": [
+      "基本字彙"
+     ],
+     "weight": 5
+    },
+    {
+     "id": 21,
+     "correct": "C",
+     "skill": [
+      "文章閱讀理解"
+     ],
+     "weight": 5
+    },
+    {
+     "id": 22,
+     "correct": "B",
+     "skill": [
+      "基本字彙"
+     ],
+     "weight": 5
+    },
+    {
+     "id": 23,
+     "correct": "D",
+     "skill": [
+      "文章閱讀理解"
+     ],
+     "weight": 5
+    },
+    {
+     "id": 24,
+     "correct": "B",
+     "skill": [
+      "文章閱讀理解"
+     ],
+     "weight": 5
+    },
+    {
+     "id": 25,
+     "correct": "A",
+     "skill": [
+      "文章閱讀理解"
+     ],
+     "weight": 5
+    },
+    {
+     "id": 26,
+     "correct": "B",
+     "skill": [
+      "文章閱讀理解"
+     ],
+     "weight": 5
+    },
+    {
+     "id": 27,
+     "correct": "C",
+     "skill": [
+      "文章閱讀理解"
+     ],
+     "weight": 5
+    },
+    {
+     "id": 28,
+     "correct": "C",
+     "skill": [
+      "文章閱讀理解"
+     ],
+     "weight": 5
+    },
+    {
+     "id": 29,
+     "correct": "A",
+     "skill": [
+      "文章閱讀理解"
+     ],
+     "weight": 5
+    },
+    {
+     "id": 30,
+     "correct": "C",
+     "skill": [
+      "文章閱讀理解"
+     ],
+     "weight": 5
+    },
+    {
+     "id": 31,
+     "correct": "D",
+     "skill": [
+      "文章閱讀理解"
+     ],
+     "weight": 5
+    },
+    {
+     "id": 32,
+     "correct": "A",
+     "skill": [
+      "文章閱讀理解"
+     ],
+     "weight": 5
+    },
+    {
+     "id": 33,
+     "correct": "C",
+     "skill": [
+      "文章閱讀理解"
+     ],
+     "weight": 5
+    },
+    {
+     "id": 34,
+     "correct": "D",
+     "skill": [
+      "文章閱讀理解"
+     ],
+     "weight": 5
+    },
+    {
+     "id": 35,
+     "correct": "C",
+     "skill": [
+      "文章閱讀理解"
+     ],
+     "weight": 5
+    },
+    {
+     "id": 36,
+     "correct": "D",
+     "skill": [
+      "文章閱讀理解"
+     ],
+     "weight": 5
+    },
+    {
+     "id": 37,
+     "correct": "C",
+     "skill": [
+      "文章閱讀理解"
+     ],
+     "weight": 5
+    },
+    {
+     "id": 38,
+     "correct": "A",
+     "skill": [
+      "文章閱讀理解"
+     ],
+     "weight": 5
+    },
+    {
+     "id": 39,
+     "correct": "B",
+     "skill": [
+      "文章閱讀理解"
+     ],
+     "weight": 5
+    },
+    {
+     "id": 40,
+     "correct": "C",
+     "skill": [
+      "文章閱讀理解"
+     ],
+     "weight": 5
+    },
+    {
+     "id": 41,
+     "correct": "D",
+     "skill": [
+      "文章閱讀理解"
+     ],
+     "weight": 5
+    },
+    {
+     "id": 42,
+     "correct": "D",
+     "skill": [
+      "文章閱讀理解"
+     ],
+     "weight": 5
+    },
+    {
+     "id": 43,
+     "correct": "C",
+     "skill": [
+      "文章閱讀理解"
+     ],
+     "weight": 5
+    }
+   ]
+  },
+  "數學": {
+   "maxScore": 125,
+   "skills": [
+    "數的運算",
+    "方程式列式",
+    "比例性質",
+    "等式不等式求解",
+    "函數圖形判別",
+    "平面座標",
+    "圖表判定",
+    "統計資料",
+    "因倍質數"
+   ],
+   "questions": [
+    {
+     "id": 1,
+     "correct": "C",
+     "skill": [
+      "數的運算"
+     ],
+     "weight": 5
+    },
+    {
+     "id": 2,
+     "correct": "A",
+     "skill": [
+      "數的運算"
+     ],
+     "weight": 5
+    },
+    {
+     "id": 3,
+     "correct": "C",
+     "skill": [
+      "圖表判定"
+     ],
+     "weight": 5
+    },
+    {
+     "id": 4,
+     "correct": "D",
+     "skill": [
+      "因倍質數"
+     ],
+     "weight": 5
+    },
+    {
+     "id": 5,
+     "correct": "A",
+     "skill": [
+      "比例性質"
+     ],
+     "weight": 5
+    },
+    {
+     "id": 6,
+     "correct": "B",
+     "skill": [
+      "圖表判定"
+     ],
+     "weight": 5
+    },
+    {
+     "id": 7,
+     "correct": "C",
+     "skill": [
+      "等式不等式求解"
+     ],
+     "weight": 5
+    },
+    {
+     "id": 8,
+     "correct": "B",
+     "skill": [
+      "因倍質數"
+     ],
+     "weight": 5
+    },
+    {
+     "id": 9,
+     "correct": "D",
+     "skill": [
+      "函數圖形判別"
+     ],
+     "weight": 5
+    },
+    {
+     "id": 10,
+     "correct": "C",
+     "skill": [
+      "平面座標"
+     ],
+     "weight": 5
+    },
+    {
+     "id": 11,
+     "correct": "B",
+     "skill": [
+      "函數圖形判別"
+     ],
+     "weight": 5
+    },
+    {
+     "id": 12,
+     "correct": "A",
+     "skill": [
+      "等式不等式求解"
+     ],
+     "weight": 5
+    },
+    {
+     "id": 13,
+     "correct": "D",
+     "skill": [
+      "統計資料"
+     ],
+     "weight": 5
+    },
+    {
+     "id": 14,
+     "correct": "C",
+     "skill": [
+      "等式不等式求解"
+     ],
+     "weight": 5
+    },
+    {
+     "id": 15,
+     "correct": "A",
+     "skill": [
+      "比例性質"
+     ],
+     "weight": 5
+    },
+    {
+     "id": 16,
+     "correct": "C",
+     "skill": [
+      "因倍質數"
+     ],
+     "weight": 5
+    },
+    {
+     "id": 17,
+     "correct": "D",
+     "skill": [
+      "方程式列式"
+     ],
+     "weight": 5
+    },
+    {
+     "id": 18,
+     "correct": "D",
+     "skill": [
+      "平面座標"
+     ],
+     "weight": 5
+    },
+    {
+     "id": 19,
+     "correct": "B",
+     "skill": [
+      "統計資料"
+     ],
+     "weight": 5
+    },
+    {
+     "id": 20,
+     "correct": "B",
+     "skill": [
+      "等式不等式求解"
+     ],
+     "weight": 5
+    },
+    {
+     "id": 21,
+     "correct": "B",
+     "skill": [
+      "等式不等式求解"
+     ],
+     "weight": 5
+    },
+    {
+     "id": 22,
+     "correct": "A",
+     "skill": [
+      "統計資料"
+     ],
+     "weight": 5
+    },
+    {
+     "id": 23,
+     "correct": "A",
+     "skill": [
+      "比例性質"
+     ],
+     "weight": 5
+    },
+    {
+     "id": 24,
+     "correct": "B",
+     "skill": [
+      "數的運算"
+     ],
+     "weight": 5
+    },
+    {
+     "id": 25,
+     "correct": "D",
+     "skill": [
+      "等式不等式求解"
+     ],
+     "weight": 5
+    }
+   ]
+  },
+  "自然": {
+   "maxScore": 250,
+   "skills": [
+    "牛頓運動定律",
+    "速度加速度",
+    "電磁力",
+    "基本電學",
+    "力與摩擦力",
+    "壓力與浮力",
+    "物質三態變化",
+    "元素化合物",
+    "聲波與光",
+    "原子結構與特性",
+    "化學、物理變化",
+    "化學反應方程式",
+    "原子量分子量",
+    "氧化還原與酸鹼",
+    "水溶液與濃度",
+    "細胞功能與結構",
+    "基因與遺傳",
+    "生物的分類",
+    "人體器官功能",
+    "生態與食物鏈",
+    "地球結構與層次",
+    "岩石種類與形成",
+    "天氣與氣候",
+    "地球月亮與太陽",
+    "水,碳,氧的循環"
+   ],
+   "questions": [
+    {
+     "id": 1,
+     "correct": "C",
+     "skill": [
+      "聲波與光"
+     ],
+     "weight": 5
+    },
+    {
+     "id": 2,
+     "correct": "D",
+     "skill": [
+      "人體器官功能"
+     ],
+     "weight": 5
+    },
+    {
+     "id": 3,
+     "correct": "A",
+     "skill": [
+      "細胞功能與結構"
+     ],
+     "weight": 5
+    },
+    {
+     "id": 4,
+     "correct": "C",
+     "skill": [
+      "聲波與光"
+     ],
+     "weight": 5
+    },
+    {
+     "id": 5,
+     "correct": "B",
+     "skill": [
+      "細胞功能與結構"
+     ],
+     "weight": 5
+    },
+    {
+     "id": 6,
+     "correct": "C",
+     "skill": [
+      "人體器官功能"
+     ],
+     "weight": 5
+    },
+    {
+     "id": 7,
+     "correct": "C",
+     "skill": [
+      "細胞功能與結構"
+     ],
+     "weight": 5
+    },
+    {
+     "id": 8,
+     "correct": "D",
+     "skill": [
+      "生物的分類"
+     ],
+     "weight": 5
+    },
+    {
+     "id": 9,
+     "correct": "D",
+     "skill": [
+      "生物的分類"
+     ],
+     "weight": 5
+    },
+    {
+     "id": 10,
+     "correct": "C",
+     "skill": [
+      "生物的分類"
+     ],
+     "weight": 5
+    },
+    {
+     "id": 11,
+     "correct": "D",
+     "skill": [
+      "聲波與光"
+     ],
+     "weight": 5
+    },
+    {
+     "id": 12,
+     "correct": "C",
+     "skill": [
+      "細胞功能與結構"
+     ],
+     "weight": 5
+    },
+    {
+     "id": 13,
+     "correct": "B",
+     "skill": [
+      "水溶液與濃度"
+     ],
+     "weight": 5
+    },
+    {
+     "id": 14,
+     "correct": "C",
+     "skill": [
+      "細胞功能與結構"
+     ],
+     "weight": 5
+    },
+    {
+     "id": 15,
+     "correct": "C",
+     "skill": [
+      "人體器官功能"
+     ],
+     "weight": 5
+    },
+    {
+     "id": 16,
+     "correct": "D",
+     "skill": [
+      "人體器官功能"
+     ],
+     "weight": 5
+    },
+    {
+     "id": 17,
+     "correct": "A",
+     "skill": [
+      "水溶液與濃度"
+     ],
+     "weight": 5
+    },
+    {
+     "id": 18,
+     "correct": "B",
+     "skill": [
+      "物質三態變化"
+     ],
+     "weight": 5
+    },
+    {
+     "id": 19,
+     "correct": "A",
+     "skill": [
+      "物質三態變化"
+     ],
+     "weight": 5
+    },
+    {
+     "id": 20,
+     "correct": "C",
+     "skill": [
+      "人體器官功能"
+     ],
+     "weight": 5
+    },
+    {
+     "id": 21,
+     "correct": "C",
+     "skill": [
+      "人體器官功能"
+     ],
+     "weight": 5
+    },
+    {
+     "id": 22,
+     "correct": "B",
+     "skill": [
+      "人體器官功能"
+     ],
+     "weight": 5
+    },
+    {
+     "id": 23,
+     "correct": "A",
+     "skill": [
+      "物質三態變化"
+     ],
+     "weight": 5
+    },
+    {
+     "id": 24,
+     "correct": "B",
+     "skill": [
+      "聲波與光"
+     ],
+     "weight": 5
+    },
+    {
+     "id": 25,
+     "correct": "B",
+     "skill": [
+      "生物的分類"
+     ],
+     "weight": 5
+    },
+    {
+     "id": 26,
+     "correct": "C",
+     "skill": [
+      "化學、物理變化"
+     ],
+     "weight": 5
+    },
+    {
+     "id": 27,
+     "correct": "D",
+     "skill": [
+      "人體器官功能"
+     ],
+     "weight": 5
+    },
+    {
+     "id": 28,
+     "correct": "C",
+     "skill": [
+      "聲波與光"
+     ],
+     "weight": 5
+    },
+    {
+     "id": 29,
+     "correct": "D",
+     "skill": [
+      "化學、物理變化"
+     ],
+     "weight": 5
+    },
+    {
+     "id": 30,
+     "correct": "D",
+     "skill": [
+      "聲波與光"
+     ],
+     "weight": 5
+    },
+    {
+     "id": 31,
+     "correct": "B",
+     "skill": [
+      "聲波與光"
+     ],
+     "weight": 5
+    },
+    {
+     "id": 32,
+     "correct": "A",
+     "skill": [
+      "生物的分類"
+     ],
+     "weight": 5
+    },
+    {
+     "id": 33,
+     "correct": "C",
+     "skill": [
+      "物質三態變化"
+     ],
+     "weight": 5
+    },
+    {
+     "id": 34,
+     "correct": "A",
+     "skill": [
+      "人體器官功能"
+     ],
+     "weight": 5
+    },
+    {
+     "id": 35,
+     "correct": "C",
+     "skill": [
+      "細胞功能與結構"
+     ],
+     "weight": 5
+    },
+    {
+     "id": 36,
+     "correct": "B",
+     "skill": [
+      "人體器官功能"
+     ],
+     "weight": 5
+    },
+    {
+     "id": 37,
+     "correct": "C",
+     "skill": [
+      "人體器官功能"
+     ],
+     "weight": 5
+    },
+    {
+     "id": 38,
+     "correct": "D",
+     "skill": [
+      "聲波與光"
+     ],
+     "weight": 5
+    },
+    {
+     "id": 39,
+     "correct": "D",
+     "skill": [
+      "生物的分類"
+     ],
+     "weight": 5
+    },
+    {
+     "id": 40,
+     "correct": "A",
+     "skill": [
+      "基因與遺傳"
+     ],
+     "weight": 5
+    },
+    {
+     "id": 41,
+     "correct": "B",
+     "skill": [
+      "聲波與光"
+     ],
+     "weight": 5
+    },
+    {
+     "id": 42,
+     "correct": "D",
+     "skill": [
+      "細胞功能與結構"
+     ],
+     "weight": 5
+    },
+    {
+     "id": 43,
+     "correct": "C",
+     "skill": [
+      "細胞功能與結構"
+     ],
+     "weight": 5
+    },
+    {
+     "id": 44,
+     "correct": "B",
+     "skill": [
+      "細胞功能與結構"
+     ],
+     "weight": 5
+    },
+    {
+     "id": 45,
+     "correct": "B",
+     "skill": [
+      "細胞功能與結構"
+     ],
+     "weight": 5
+    },
+    {
+     "id": 46,
+     "correct": "B",
+     "skill": [
+      "聲波與光"
+     ],
+     "weight": 5
+    },
+    {
+     "id": 47,
+     "correct": "C",
+     "skill": [
+      "聲波與光"
+     ],
+     "weight": 5
+    },
+    {
+     "id": 48,
+     "correct": "D",
+     "skill": [
+      "基因與遺傳"
+     ],
+     "weight": 5
+    },
+    {
+     "id": 49,
+     "correct": "C",
+     "skill": [
+      "基因與遺傳"
+     ],
+     "weight": 5
+    },
+    {
+     "id": 50,
+     "correct": "B",
+     "skill": [
+      "基因與遺傳"
+     ],
+     "weight": 5
+    }
+   ]
+  },
+  "社會": {
+   "maxScore": 270,
+   "skills": [
+    "區位認識",
+    "地球氣候",
+    "地形分布",
+    "文化特色",
+    "洋流與季風",
+    "自然災害",
+    "都市化人口組成",
+    "地圖判別",
+    "環境與永續",
+    "臺灣史的變遷",
+    "中國史演變",
+    "近代國民國史",
+    "世界古文明",
+    "普世宗教發展",
+    "歐洲革命",
+    "世界列強的殖民",
+    "一二次世界大戰",
+    "近代國際局勢",
+    "公民與權利",
+    "性別平權與家庭",
+    "多元文化與社會",
+    "國家的組織",
+    "政府的功能",
+    "法律與人權",
+    "自由市場經濟",
+    "金融與貨幣",
+    "全球化國際社會"
+   ],
+   "questions": [
+    {
+     "id": 1,
+     "correct": "A",
+     "skill": [
+      "地圖判別"
+     ],
+     "weight": 5
+    },
+    {
+     "id": 2,
+     "correct": "B",
+     "skill": [
+      "區位認識"
+     ],
+     "weight": 5
+    },
+    {
+     "id": 3,
+     "correct": "C",
+     "skill": [
+      "地形分布"
+     ],
+     "weight": 5
+    },
+    {
+     "id": 4,
+     "correct": "B",
+     "skill": [
+      "地形分布"
+     ],
+     "weight": 5
+    },
+    {
+     "id": 5,
+     "correct": "B",
+     "skill": [
+      "環境與永續"
+     ],
+     "weight": 5
+    },
+    {
+     "id": 6,
+     "correct": "B",
+     "skill": [
+      "文化特色"
+     ],
+     "weight": 5
+    },
+    {
+     "id": 7,
+     "correct": "C",
+     "skill": [
+      "臺灣史的變遷"
+     ],
+     "weight": 5
+    },
+    {
+     "id": 8,
+     "correct": "C",
+     "skill": [
+      "世界列強的殖民"
+     ],
+     "weight": 5
+    },
+    {
+     "id": 9,
+     "correct": "D",
+     "skill": [
+      "文化特色"
+     ],
+     "weight": 5
+    },
+    {
+     "id": 10,
+     "correct": "D",
+     "skill": [
+      "臺灣史的變遷"
+     ],
+     "weight": 5
+    },
+    {
+     "id": 11,
+     "correct": "C",
+     "skill": [
+      "公民與權利"
+     ],
+     "weight": 5
+    },
+    {
+     "id": 12,
+     "correct": "C",
+     "skill": [
+      "性別平權與家庭"
+     ],
+     "weight": 5
+    },
+    {
+     "id": 13,
+     "correct": "B",
+     "skill": [
+      "多元文化與社會"
+     ],
+     "weight": 5
+    },
+    {
+     "id": 14,
+     "correct": "B",
+     "skill": [
+      "性別平權與家庭"
+     ],
+     "weight": 5
+    },
+    {
+     "id": 15,
+     "correct": "A",
+     "skill": [
+      "多元文化與社會"
+     ],
+     "weight": 5
+    },
+    {
+     "id": 16,
+     "correct": "D",
+     "skill": [
+      "地形分布"
+     ],
+     "weight": 5
+    },
+    {
+     "id": 17,
+     "correct": "B",
+     "skill": [
+      "地形分布"
+     ],
+     "weight": 5
+    },
+    {
+     "id": 18,
+     "correct": "C",
+     "skill": [
+      "地圖判別"
+     ],
+     "weight": 5
+    },
+    {
+     "id": 19,
+     "correct": "B",
+     "skill": [
+      "地球氣候"
+     ],
+     "weight": 5
+    },
+    {
+     "id": 20,
+     "correct": "A",
+     "skill": [
+      "地圖判別"
+     ],
+     "weight": 5
+    },
+    {
+     "id": 21,
+     "correct": "D",
+     "skill": [
+      "臺灣史的變遷"
+     ],
+     "weight": 5
+    },
+    {
+     "id": 22,
+     "correct": "C",
+     "skill": [
+      "文化特色"
+     ],
+     "weight": 5
+    },
+    {
+     "id": 23,
+     "correct": "B",
+     "skill": [
+      "全球化國際社會"
+     ],
+     "weight": 5
+    },
+    {
+     "id": 24,
+     "correct": "B",
+     "skill": [
+      "全球化國際社會"
+     ],
+     "weight": 5
+    },
+    {
+     "id": 25,
+     "correct": "B",
+     "skill": [
+      "環境與永續"
+     ],
+     "weight": 5
+    },
+    {
+     "id": 26,
+     "correct": "A",
+     "skill": [
+      "文化特色"
+     ],
+     "weight": 5
+    },
+    {
+     "id": 27,
+     "correct": "B",
+     "skill": [
+      "多元文化與社會"
+     ],
+     "weight": 5
+    },
+    {
+     "id": 28,
+     "correct": "D",
+     "skill": [
+      "法律與人權"
+     ],
+     "weight": 5
+    },
+    {
+     "id": 29,
+     "correct": "B",
+     "skill": [
+      "多元文化與社會"
+     ],
+     "weight": 5
+    },
+    {
+     "id": 30,
+     "correct": "C",
+     "skill": [
+      "公民與權利"
+     ],
+     "weight": 5
+    },
+    {
+     "id": 31,
+     "correct": "D",
+     "skill": [
+      "地球氣候"
+     ],
+     "weight": 5
+    },
+    {
+     "id": 32,
+     "correct": "D",
+     "skill": [
+      "地球氣候"
+     ],
+     "weight": 5
+    },
+    {
+     "id": 33,
+     "correct": "C",
+     "skill": [
+      "都市化人口組成"
+     ],
+     "weight": 5
+    },
+    {
+     "id": 34,
+     "correct": "A",
+     "skill": [
+      "文化特色"
+     ],
+     "weight": 5
+    },
+    {
+     "id": 35,
+     "correct": "B",
+     "skill": [
+      "地形分布"
+     ],
+     "weight": 5
+    },
+    {
+     "id": 36,
+     "correct": "B",
+     "skill": [
+      "一二次世界大戰"
+     ],
+     "weight": 5
+    },
+    {
+     "id": 37,
+     "correct": "C",
+     "skill": [
+      "近代國民國史"
+     ],
+     "weight": 5
+    },
+    {
+     "id": 38,
+     "correct": "D",
+     "skill": [
+      "一二次世界大戰"
+     ],
+     "weight": 5
+    },
+    {
+     "id": 39,
+     "correct": "C",
+     "skill": [
+      "多元文化與社會"
+     ],
+     "weight": 5
+    },
+    {
+     "id": 40,
+     "correct": "A",
+     "skill": [
+      "性別平權與家庭"
+     ],
+     "weight": 5
+    },
+    {
+     "id": 41,
+     "correct": "C",
+     "skill": [
+      "多元文化與社會"
+     ],
+     "weight": 5
+    },
+    {
+     "id": 42,
+     "correct": "C",
+     "skill": [
+      "全球化國際社會"
+     ],
+     "weight": 5
+    },
+    {
+     "id": 43,
+     "correct": "C",
+     "skill": [
+      "公民與權利"
+     ],
+     "weight": 5
+    },
+    {
+     "id": 44,
+     "correct": "D",
+     "skill": [
+      "性別平權與家庭"
+     ],
+     "weight": 5
+    },
+    {
+     "id": 45,
+     "correct": "B",
+     "skill": [
+      "公民與權利"
+     ],
+     "weight": 5
+    },
+    {
+     "id": 46,
+     "correct": "C",
+     "skill": [
+      "文化特色"
+     ],
+     "weight": 5
+    },
+    {
+     "id": 47,
+     "correct": "C",
+     "skill": [
+      "都市化人口組成"
+     ],
+     "weight": 5
+    },
+    {
+     "id": 48,
+     "correct": "A",
+     "skill": [
+      "環境與永續"
+     ],
+     "weight": 5
+    },
+    {
+     "id": 49,
+     "correct": "A",
+     "skill": [
+      "近代國民國史"
+     ],
+     "weight": 5
+    },
+    {
+     "id": 50,
+     "correct": "C",
+     "skill": [
+      "環境與永續"
+     ],
+     "weight": 5
+    },
+    {
+     "id": 51,
+     "correct": "A",
+     "skill": [
+      "臺灣史的變遷"
+     ],
+     "weight": 5
+    },
+    {
+     "id": 52,
+     "correct": "C",
+     "skill": [
+      "多元文化與社會"
+     ],
+     "weight": 5
+    },
+    {
+     "id": 53,
+     "correct": "B",
+     "skill": [
+      "公民與權利"
+     ],
+     "weight": 5
+    },
+    {
+     "id": 54,
+     "correct": "A",
+     "skill": [
+      "多元文化與社會"
+     ],
+     "weight": 5
+    }
+   ]
+  }
+ }
+}

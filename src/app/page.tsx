@@ -1,5 +1,7 @@
 "use client";
 
+import { EXAM_MENU } from "@/exams/menu";
+
 const GRAIN_SVG = `url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='160' height='160'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='2'/%3E%3CfeColorMatrix type='saturate' values='0'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)' opacity='0.06'/%3E%3C/svg%3E")`;
 
 export default function Portal() {
@@ -61,6 +63,22 @@ export default function Portal() {
                   <span>→</span>
                 </div>
               </a>
+
+              {/* 整合進來的其他成績單系統 */}
+              {EXAM_MENU.map(card => (
+                <a key={card.id} href={`/exam/${card.id}`} style={{ textDecoration: "none", display: "block", border: "1.5px solid #cdc3ad", padding: "28px 24px", background: "#f7f2e6", transition: "border-color .18s" }}
+                  onMouseEnter={e => (e.currentTarget.style.borderColor = "#23201a")}
+                  onMouseLeave={e => (e.currentTarget.style.borderColor = "#cdc3ad")}>
+                  <div className="mono" style={{ fontSize: 10, letterSpacing: ".25em", color: "#9a917c", marginBottom: 14 }}>SYSTEM · {card.no}</div>
+                  <div style={{ fontSize: 32, marginBottom: 12 }}>{card.icon}</div>
+                  <div className="serif" style={{ fontWeight: 700, fontSize: 18, color: "#23201a", letterSpacing: ".04em" }}>{card.title}</div>
+                  <div style={{ marginTop: 8, fontSize: 13, color: "#6e685a", lineHeight: 1.7 }}>{card.desc[0]}<br />{card.desc[1]}</div>
+                  <div style={{ marginTop: 18, display: "flex", alignItems: "center", gap: 6, color: "#b0402c", fontSize: 13 }} className="mono">
+                    <span>進入系統</span>
+                    <span>→</span>
+                  </div>
+                </a>
+              ))}
             </div>
           </div>
         </div>
