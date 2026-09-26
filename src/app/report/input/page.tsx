@@ -1,11 +1,11 @@
 "use client";
 
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { useRouter, useSearchParams } from "next/navigation";
 import { Suspense } from "react";
 import indicatorDB from "@/data/indicators.json";
 import { IndicatorDB, SUBJECTS, WEEKS, WEEK_ZH, Subject, WeekKey } from "@/lib/types";
-import { getAnswers, saveAnswers } from "@/lib/store";
+import { getStudentAnswers, saveAnswers } from "@/lib/store";
 
 const db = indicatorDB as unknown as IndicatorDB;
 const GRAIN = `url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='160' height='160'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='2'/%3E%3CfeColorMatrix type='saturate' values='0'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)' opacity='0.06'/%3E%3C/svg%3E")`;
@@ -19,9 +19,24 @@ function InputForm() {
   const week    = (params.get("week")    || "W1")  as WeekKey;
 
   const indicators = db[subject]?.weeks[week] ?? [];
-  const existingAnswers = getAnswers(branch, student, subject, week);
-  const [flags, setFlags] = useState<boolean[]>(existingAnswers ?? Array(indicators.length).fill(true));
+  const [flags, setFlags] = useState<boolean[]>([]);
+  const [loaded, setLoaded] = useState(false);
   const [saved, setSaved] = useState(false);
+  const [saving, setSaving] = useState(false);
+  const [saveError, setSaveError] = useState<string | null>(null);
+
+  useEffect(() => {
+    let cancelled = false;
+    setLoaded(false);
+    getStudentAnswers(branch, student).then(answers => {
+      if (cancelled) return;
+      const existing = answers[subject]?.[week] ?? null;
+      setFlags(existing ?? Array(indicators.length).fill(true));
+      setLoaded(true);
+    });
+    return () => { cancelled = true; };
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [branch, student, subject, week]);
 
   // Subject / week navigation
   const subjIdx = SUBJECTS.indexOf(subject);
@@ -31,18 +46,32 @@ function InputForm() {
     setSaved(false);
   }
 
-  function handleSave() {
-    saveAnswers(branch, student, subject, week, flags);
-    setSaved(true);
+  async function handleSave(): Promise<boolean> {
+    setSaving(true);
+    setSaveError(null);
+    try {
+      await saveAnswers(branch, student, subject, week, flags);
+      setSaved(true);
+      return true;
+    } catch (e) {
+      setSaved(false);
+      setSaveError(e instanceof Error ? e.message : "儲存失敗，請檢查網路連線後重試");
+      return false;
+    } finally {
+      setSaving(false);
+    }
   }
 
-  function handleSaveAndBack() {
-    saveAnswers(branch, student, subject, week, flags);
-    router.push(`/report?branch=${encodeURIComponent(branch)}`);
+  async function handleSaveAndBack() {
+    const ok = await handleSave();
+    if (!ok) return;
+    // 用完整頁面導航返回名冊，避免 Next.js 用戶端快取顯示過期的完成度
+    window.location.href = `/report?branch=${encodeURIComponent(branch)}`;
   }
 
-  function navigate(s: Subject, w: WeekKey) {
-    handleSave();
+  async function navigate(s: Subject, w: WeekKey) {
+    const ok = await handleSave();
+    if (!ok) return;
     router.push(`/report/input?branch=${encodeURIComponent(branch)}&student=${encodeURIComponent(student)}&subject=${encodeURIComponent(s)}&week=${w}`);
   }
 
@@ -63,7 +92,7 @@ function InputForm() {
                 <div className="mono" style={{ fontSize: 10, color: "#6e685a", marginTop: 3, letterSpacing: ".1em" }}>{branch}</div>
               </div>
               <button
-                onClick={() => router.push(`/report?branch=${encodeURIComponent(branch)}`)}
+                onClick={() => { window.location.href = `/report?branch=${encodeURIComponent(branch)}`; }}
                 style={{ background: "transparent", border: "1px solid #cdc3ad", padding: "5px 12px", cursor: "pointer" }}
               >
                 <span className="mono" style={{ fontSize: 10, letterSpacing: ".12em", color: "#6e685a" }}>← 返回名冊</span>
@@ -125,6 +154,11 @@ function InputForm() {
             </div>
 
             {/* Question list */}
+            {!loaded ? (
+              <div style={{ padding: "40px 0", textAlign: "center" }}>
+                <span className="mono" style={{ fontSize: 11, letterSpacing: ".2em", color: "#9a917c" }}>載入中…</span>
+              </div>
+            ) : (
             <div>
               {indicators.map((ind, i) => (
                 <div
@@ -155,15 +189,17 @@ function InputForm() {
                 </div>
               ))}
             </div>
+            )}
 
             {/* Save buttons */}
             <div style={{ padding: "20px 40px 28px", display: "flex", gap: 12, justifyContent: "flex-end", alignItems: "center" }}>
-              {saved && <span className="mono" style={{ fontSize: 10, letterSpacing: ".12em", color: "#6e685a" }}>已儲存 ✓</span>}
-              <button onClick={handleSave} className="serif" style={{ padding: "8px 20px", border: "1.5px solid #23201a", background: "transparent", fontSize: 13, fontWeight: 600, color: "#23201a", cursor: "pointer", letterSpacing: ".06em" }}>
-                儲存
+              {saveError && <span className="mono" style={{ fontSize: 10, letterSpacing: ".08em", color: "#b0402c" }}>⚠ {saveError}</span>}
+              {!saveError && saved && <span className="mono" style={{ fontSize: 10, letterSpacing: ".12em", color: "#6e685a" }}>已儲存 ✓</span>}
+              <button onClick={handleSave} disabled={!loaded || saving} className="serif" style={{ padding: "8px 20px", border: "1.5px solid #23201a", background: "transparent", fontSize: 13, fontWeight: 600, color: "#23201a", cursor: loaded && !saving ? "pointer" : "not-allowed", letterSpacing: ".06em", opacity: loaded && !saving ? 1 : 0.5 }}>
+                {saving ? "儲存中…" : "儲存"}
               </button>
-              <button onClick={handleSaveAndBack} className="serif" style={{ padding: "8px 24px", border: "1.5px solid #23201a", background: "#23201a", fontSize: 13, fontWeight: 600, color: "#f2ecdd", cursor: "pointer", letterSpacing: ".06em" }}>
-                儲存並返回名冊
+              <button onClick={handleSaveAndBack} disabled={!loaded || saving} className="serif" style={{ padding: "8px 24px", border: "1.5px solid #23201a", background: "#23201a", fontSize: 13, fontWeight: 600, color: "#f2ecdd", cursor: loaded && !saving ? "pointer" : "not-allowed", letterSpacing: ".06em", opacity: loaded && !saving ? 1 : 0.5 }}>
+                {saving ? "儲存中…" : "儲存並返回名冊"}
               </button>
             </div>
           </div>

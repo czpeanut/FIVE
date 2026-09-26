@@ -1,13 +1,15 @@
 "use client";
 
-import { useEffect, useState } from "react";
+import { useEffect, useRef, useState } from "react";
 import Link from "next/link";
 import { BRANCH_GROUPS, getSchoolInfo } from "@/lib/branches";
-import { SUBJECTS, WEEKS, WEEK_ZH } from "@/lib/types";
+import { SUBJECTS, WEEKS, WEEK_ZH, Subject } from "@/lib/types";
 import {
   getStudentList, addStudent, removeStudent,
-  getStudentProgress, isStudentComplete,
+  getBranchAnswers, computeProgress, isComplete,
+  StudentAnswers, emptyStudentAnswers,
 } from "@/lib/store";
+import { PrintPage } from "@/components/PrintPage";
 
 const BRANCH_KEY = "selectedBranch_v1";
 const GRAIN = `url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='160' height='160'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='2'/%3E%3CfeColorMatrix type='saturate' values='0'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)' opacity='0.06'/%3E%3C/svg%3E")`;
@@ -108,26 +110,75 @@ function BranchSelect({ onSelect }: { onSelect: (branch: string) => void }) {
 function Roster({ branch, onChangeBranch }: { branch: string; onChangeBranch: () => void }) {
   const school = getSchoolInfo(branch);
   const [students, setStudents] = useState<string[]>([]);
+  const [answersByStudent, setAnswersByStudent] = useState<Record<string, StudentAnswers>>({});
+  const [loading, setLoading] = useState(true);
   const [newName, setNewName] = useState("");
   const [showAdd, setShowAdd] = useState(false);
+  const [exporting, setExporting] = useState(false);
+  const [exportProgress, setExportProgress] = useState({ current: 0, total: 0 });
+  const [exportStudent, setExportStudent] = useState<string | null>(null);
+  const bulkRefs = useRef<(HTMLDivElement | null)[]>([null, null, null, null]);
 
-  useEffect(() => {
-    setStudents(getStudentList(branch));
-  }, [branch]);
-
-  function handleAddStudent() {
-    const name = newName.trim();
-    if (!name || students.includes(name)) return;
-    addStudent(branch, name);
-    setStudents(getStudentList(branch));
-    setNewName("");
-    setShowAdd(false);
+  async function loadData() {
+    setLoading(true);
+    const [list, ansMap] = await Promise.all([getStudentList(branch), getBranchAnswers(branch)]);
+    setStudents(list);
+    setAnswersByStudent(ansMap);
+    setLoading(false);
   }
 
-  function handleRemove(name: string) {
+  useEffect(() => { loadData(); }, [branch]); // eslint-disable-line react-hooks/exhaustive-deps
+
+  async function handleAddStudent() {
+    const name = newName.trim();
+    if (!name || students.includes(name)) return;
+    await addStudent(branch, name);
+    setNewName("");
+    setShowAdd(false);
+    await loadData();
+  }
+
+  async function handleRemove(name: string) {
     if (!confirm(`確定刪除「${name}」的所有成績資料？`)) return;
-    removeStudent(branch, name);
-    setStudents(getStudentList(branch));
+    await removeStudent(branch, name);
+    await loadData();
+  }
+
+  async function bulkDownloadPdf() {
+    if (students.length === 0 || exporting) return;
+    setExporting(true);
+    setExportProgress({ current: 0, total: students.length });
+    try {
+      const { flushSync } = await import("react-dom");
+      const html2canvas = (await import("html2canvas")).default;
+      const { jsPDF }   = await import("jspdf");
+      const pdf = new jsPDF({ orientation: "portrait", unit: "mm", format: "a4" });
+      const pw  = pdf.internal.pageSize.getWidth();
+      const ph  = pdf.internal.pageSize.getHeight();
+      let first = true;
+      await document.fonts.ready;
+
+      for (let si = 0; si < students.length; si++) {
+        const name = students[si];
+        // 同步更新隱藏列印頁的學生資料，確保截圖前 DOM 已是最新內容
+        flushSync(() => setExportStudent(name));
+        await new Promise(r => requestAnimationFrame(() => requestAnimationFrame(r)));
+
+        for (let i = 0; i < SUBJECTS.length; i++) {
+          const el = bulkRefs.current[i];
+          if (!el) continue;
+          const canvas = await html2canvas(el, { scale: 2, useCORS: true, backgroundColor: "#f2ecdd", logging: false });
+          if (!first) pdf.addPage();
+          pdf.addImage(canvas.toDataURL("image/jpeg", 0.92), "JPEG", 0, 0, pw, ph);
+          first = false;
+        }
+        setExportProgress({ current: si + 1, total: students.length });
+      }
+      pdf.save(`${branch}_全體成績單.pdf`);
+    } finally {
+      setExporting(false);
+      setExportStudent(null);
+    }
   }
 
   return (
@@ -144,7 +195,7 @@ function Roster({ branch, onChangeBranch }: { branch: string; onChangeBranch: ()
                   <span className="serif" style={{ fontWeight: 900, fontSize: 20 }}>{school.char}</span>
                 </div>
                 <div>
-                  <div className="mono" style={{ fontSize: 10, letterSpacing: ".34em", color: "#9a917c" }}>{school.en} · REGISTRY</div>
+                  <div className="mono" style={{ fontSize: 10, letterSpacing: ".34em", color: "#9a917c" }}>{school.zh}　名冊管理</div>
                   <div className="serif" style={{ fontWeight: 700, fontSize: 26, letterSpacing: ".04em", color: "#23201a", marginTop: 4, lineHeight: 1.1 }}>五力指標成績管理</div>
                   <div className="serif" style={{ fontSize: 12, color: "#6e685a", marginTop: 3 }}>
                     {branch}　六升七銜接課程　五週逐次填入・完成後輸出報告
@@ -165,12 +216,33 @@ function Roster({ branch, onChangeBranch }: { branch: string; onChangeBranch: ()
             <div style={{ margin: "3px 44px 0", borderTop: "1px solid #23201a" }} />
 
             {/* 新增學生列 */}
-            <div style={{ padding: "16px 44px", borderBottom: "1px solid #cdc3ad", display: "flex", alignItems: "center", justifyContent: "flex-end" }}>
+            <div style={{ padding: "16px 44px", borderBottom: "1px solid #cdc3ad", display: "flex", alignItems: "center", justifyContent: "flex-end", gap: 10 }}>
+              {exporting && (
+                <span className="mono" style={{ fontSize: 10, letterSpacing: ".1em", color: "#9a917c", marginRight: "auto" }}>
+                  產生中… {exportProgress.current}/{exportProgress.total} 位學生
+                </span>
+              )}
+              <button onClick={bulkDownloadPdf} disabled={exporting || students.length === 0} className="serif"
+                style={{ padding: "7px 20px", background: "#b0402c", color: "#f2ecdd", border: "none", fontSize: 13, fontWeight: 600, cursor: exporting || students.length === 0 ? "not-allowed" : "pointer", letterSpacing: ".06em", opacity: exporting || students.length === 0 ? 0.5 : 1 }}>
+                {exporting ? "產生中…" : "下載全體 PDF"}
+              </button>
               <button onClick={() => setShowAdd(true)} className="serif"
                 style={{ padding: "7px 20px", background: "#23201a", color: "#f2ecdd", border: "none", fontSize: 13, fontWeight: 600, cursor: "pointer", letterSpacing: ".06em" }}>
                 ＋ 新增學生
               </button>
             </div>
+
+            {/* 隱藏列印頁（供批次下載時逐位截圖） */}
+            {exportStudent && (
+              <div style={{ position: "absolute", left: -9999, top: 0, pointerEvents: "none", overflow: "hidden" }}>
+                {SUBJECTS.map((subj, i) => (
+                  <PrintPage key={subj} branch={branch} student={exportStudent} subject={subj as Subject}
+                    school={school} answers={answersByStudent[exportStudent] ?? emptyStudentAnswers()}
+                    setRef={el => { bulkRefs.current[i] = el; }}
+                  />
+                ))}
+              </div>
+            )}
 
             {showAdd && (
               <div style={{ padding: "14px 44px", background: "#f7f2e6", borderBottom: "1px solid #cdc3ad", display: "flex", alignItems: "center", gap: 16 }}>
@@ -186,15 +258,20 @@ function Roster({ branch, onChangeBranch }: { branch: string; onChangeBranch: ()
               </div>
             )}
 
-            {/* 空狀態 */}
-            {students.length === 0 && (
+            {/* 空狀態 / 載入中 */}
+            {loading && (
+              <div style={{ padding: "40px 44px", textAlign: "center" }}>
+                <span className="mono" style={{ fontSize: 11, letterSpacing: ".2em", color: "#9a917c" }}>載入中…</span>
+              </div>
+            )}
+            {!loading && students.length === 0 && (
               <div style={{ padding: "40px 44px", textAlign: "center" }}>
                 <div className="serif" style={{ color: "#9a917c", fontSize: 14 }}>尚無學生資料，請點擊「新增學生」</div>
               </div>
             )}
 
             {/* 學生表格 */}
-            {students.length > 0 && (
+            {!loading && students.length > 0 && (
               <div style={{ padding: "0 44px 32px" }}>
                 <div style={{ display: "grid", gridTemplateColumns: "160px repeat(4, 1fr) 80px 100px", borderBottom: "1.5px solid #23201a", paddingTop: 20, paddingBottom: 8 }}>
                   <div className="mono" style={{ fontSize: 9, letterSpacing: ".15em", color: "#9a917c" }}>姓名</div>
@@ -206,8 +283,9 @@ function Roster({ branch, onChangeBranch }: { branch: string; onChangeBranch: ()
                 </div>
 
                 {students.map((name, si) => {
-                  const prog = getStudentProgress(branch, name);
-                  const done = isStudentComplete(branch, name);
+                  const ans  = answersByStudent[name] ?? emptyStudentAnswers();
+                  const prog = computeProgress(ans);
+                  const done = isComplete(ans);
                   const totalCells = SUBJECTS.length * WEEKS.length;
                   const filledCells = SUBJECTS.reduce((acc, s) => acc + WEEKS.filter(w => prog[s]?.[w]).length, 0);
 
@@ -259,7 +337,7 @@ function Roster({ branch, onChangeBranch }: { branch: string; onChangeBranch: ()
             )}
 
             {/* 圖例 */}
-            {students.length > 0 && (
+            {!loading && students.length > 0 && (
               <div style={{ padding: "0 44px 24px", display: "flex", alignItems: "center", gap: 20 }}>
                 <div style={{ display: "flex", alignItems: "center", gap: 6 }}>
                   <div style={{ width: 14, height: 14, background: "#b0402c", border: "1px solid #b0402c" }} />
@@ -278,7 +356,7 @@ function Roster({ branch, onChangeBranch }: { branch: string; onChangeBranch: ()
         </div>
 
         <div className="mono" style={{ textAlign: "center", marginTop: 20, fontSize: 10, letterSpacing: ".2em", color: "#9a917c" }}>
-          {school.en} · {branch}
+          {branch}
         </div>
       </div>
     </div>

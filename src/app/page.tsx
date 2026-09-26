@@ -1,7 +1,5 @@
 "use client";
 
-import Link from "next/link";
-
 const GRAIN_SVG = `url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='160' height='160'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='2'/%3E%3CfeColorMatrix type='saturate' values='0'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)' opacity='0.06'/%3E%3C/svg%3E")`;
 
 export default function Portal() {
@@ -51,7 +49,7 @@ export default function Portal() {
               </a>
 
               {/* 成績單系統 */}
-              <Link href="/report" style={{ textDecoration: "none", display: "block", border: "1.5px solid #cdc3ad", padding: "28px 24px", background: "#f7f2e6", transition: "border-color .18s" }}
+              <a href="/report" style={{ textDecoration: "none", display: "block", border: "1.5px solid #cdc3ad", padding: "28px 24px", background: "#f7f2e6", transition: "border-color .18s" }}
                 onMouseEnter={e => (e.currentTarget.style.borderColor = "#23201a")}
                 onMouseLeave={e => (e.currentTarget.style.borderColor = "#cdc3ad")}>
                 <div className="mono" style={{ fontSize: 10, letterSpacing: ".25em", color: "#9a917c", marginBottom: 14 }}>SYSTEM · 02</div>
@@ -62,7 +60,7 @@ export default function Portal() {
                   <span>進入系統</span>
                   <span>→</span>
                 </div>
-              </Link>
+              </a>
             </div>
           </div>
         </div>
