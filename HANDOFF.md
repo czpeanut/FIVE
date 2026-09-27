@@ -2,6 +2,7 @@
 
 > 給新 session 用。最後更新：2026-09-26。
 > 建議新 session 直接在 `C:\Users\ssoni\report-card` 開啟，並先讀完本文件。
+> **另有三套成績單系統已整合進本專案（`/exam/*`），架構、上線步驟與待確認事項見 `INTEGRATION.md`。**
 
 ## 1. 專案概覽
 
