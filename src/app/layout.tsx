@@ -2,8 +2,8 @@ import type { Metadata } from "next";
 import "./globals.css";
 
 export const metadata: Metadata = {
-  title: "五力指標成績單系統",
-  description: "六升七五力指標測驗成績單輸出系統",
+  title: "補習班自動化功能整合入口",
+  description: "補習班自動化功能整合入口：五力指標、模考與學力檢測成績單輸出",
 };
 
 export default function RootLayout({
