@@ -12,15 +12,22 @@ export async function GET(req: NextRequest) {
     return NextResponse.json({ error: "missing/invalid module, exam or branch" }, { status: 400 });
   }
 
-  let query = supabaseAdmin
-    .from("exam_answers")
-    .select("student, subject, answers, extra")
-    .eq("module", mod).eq("exam", exam).eq("branch", branch);
-  if (student) query = query.eq("student", student);
-
-  const { data, error } = await query;
-  if (error) return NextResponse.json({ error: error.message }, { status: 500 });
-  return NextResponse.json({ rows: data ?? [] });
+  // Supabase 單次查詢最多回傳 1000 筆，依主鍵排序分頁讀到沒有資料為止
+  const data: Record<string, unknown>[] = [];
+  for (;;) {
+    let query = supabaseAdmin
+      .from("exam_answers")
+      .select("student, subject, answers, extra")
+      .eq("module", mod).eq("exam", exam).eq("branch", branch);
+    if (student) query = query.eq("student", student);
+    const { data: page, error } = await query
+      .order("student").order("subject")
+      .range(data.length, data.length + 999);
+    if (error) return NextResponse.json({ error: error.message }, { status: 500 });
+    if (!page || page.length === 0) break;
+    data.push(...page);
+  }
+  return NextResponse.json({ rows: data });
 }
 
 export async function POST(req: NextRequest) {

@@ -2,17 +2,17 @@
 
 import { ReactNode, useEffect, useState } from "react";
 import { BRANCH_GROUPS } from "@/lib/branches";
-import { C, GRAIN, BRANCH_KEY } from "./theme";
+import { C, GRAIN, branchKey } from "./theme";
 
-// 分校選擇（與 FIVE 相同的畫面與 localStorage，選過一次各系統共用）
-function BranchSelect({ onSelect, title }: { onSelect: (branch: string) => void; title: string }) {
+// 分校選擇（與 FIVE 相同的畫面；每套系統各自記住選過的分校）
+function BranchSelect({ moduleId, onSelect, title }: { moduleId: string; onSelect: (branch: string) => void; title: string }) {
   const [region, setRegion] = useState("");
   const [branch, setBranch] = useState("");
   const regionBranches = BRANCH_GROUPS.find(g => g.region === region)?.branches ?? [];
 
   function confirm() {
     if (!branch) return;
-    localStorage.setItem(BRANCH_KEY, branch);
+    localStorage.setItem(branchKey(moduleId), branch);
     onSelect(branch);
   }
 
@@ -86,12 +86,12 @@ function BranchSelect({ onSelect, title }: { onSelect: (branch: string) => void;
 }
 
 // 取得登入分校；尚未選擇時顯示選擇畫面
-export function BranchGate({ title, children }: { title: string; children: (branch: string, changeBranch: () => void) => ReactNode }) {
+export function BranchGate({ moduleId, title, children }: { moduleId: string; title: string; children: (branch: string, changeBranch: () => void) => ReactNode }) {
   const [branch, setBranch] = useState<string | null>(null);
 
   useEffect(() => {
-    setBranch(localStorage.getItem(BRANCH_KEY) ?? "");
-  }, []);
+    setBranch(localStorage.getItem(branchKey(moduleId)) ?? "");
+  }, [moduleId]);
 
   if (branch === null) {
     return (
@@ -100,6 +100,6 @@ export function BranchGate({ title, children }: { title: string; children: (bran
       </div>
     );
   }
-  if (!branch) return <BranchSelect title={title} onSelect={setBranch} />;
-  return <>{children(branch, () => { localStorage.removeItem(BRANCH_KEY); setBranch(""); })}</>;
+  if (!branch) return <BranchSelect moduleId={moduleId} title={title} onSelect={setBranch} />;
+  return <>{children(branch, () => { localStorage.removeItem(branchKey(moduleId)); setBranch(""); })}</>;
 }

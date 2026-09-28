@@ -276,7 +276,7 @@ function Hub() {
   if (!spec) {
     return <PaperPage maxWidth={480}><div style={{ padding: 40, textAlign: "center" }}><a href="/" className="serif" style={{ color: C.accent }}>找不到此系統，返回主選單</a></div></PaperPage>;
   }
-  return <BranchGate title={spec.title}>{(branch, change) => <Roster spec={spec} branch={branch} onChangeBranch={change} />}</BranchGate>;
+  return <BranchGate moduleId={spec.id} title={spec.title}>{(branch, change) => <Roster spec={spec} branch={branch} onChangeBranch={change} />}</BranchGate>;
 }
 
 export default function ExamHubPage() {

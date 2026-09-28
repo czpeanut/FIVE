@@ -201,7 +201,7 @@ function Page() {
   const params = useParams<{ module: string }>();
   const spec = getModule(params.module);
   if (!spec) return <PaperPage maxWidth={480}><div style={{ padding: 40, textAlign: "center" }}><a href="/" style={{ color: C.accent }}>找不到此系統，返回主選單</a></div></PaperPage>;
-  return <BranchGate title={spec.title}>{branch => <InputForm spec={spec} branch={branch} />}</BranchGate>;
+  return <BranchGate moduleId={spec.id} title={spec.title}>{branch => <InputForm spec={spec} branch={branch} />}</BranchGate>;
 }
 
 export default function ExamInputPage() {
