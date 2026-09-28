@@ -47,6 +47,8 @@ supabase-exam-setup.sql        新資料表建表 SQL
 2. `npm run build` 確認通過（先停掉 dev server）。
 3. `npx vercel --prod --yes`。
 
+> Vercel 已串接 GitHub：master 合併後自動部署到正式站。`vercel.json` 設定 `claude/**` 分支不建立預覽部署（預覽環境沒有 Supabase 環境變數，建置必定失敗）。
+
 ## 4. 待確認事項（整合時照原樣保留，未修改）
 
 見 PR 說明或對話紀錄中的完整清單；確認後修改對應的資料檔即可：
