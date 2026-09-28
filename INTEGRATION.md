@@ -52,7 +52,7 @@ supabase-exam-setup.sql        新資料表建表 SQL
 - 國中模考：`src/exams/junior-mock/data.json`
 - 國小學力檢測：`src/exams/elementary/data.ts`
 - 國小學科能力檢測：`src/exams/elementary-basic/data.json`（年級對應：fileB＝小四、fileC＝小五、fileA＝小六，見 `scoring.ts` 的 `EB_EXAMS`）
-- 達陣文理的分校：`src/lib/branches.ts`（會同時影響 FIVE 的分校選單）
+- 分校清單：`src/lib/branches.ts`（會同時影響 FIVE 的分校選單）。舊系統的「達陣」經行政端確認即「達學文理」（復興校、德忠校），分校清單原本就有，不需新增。
 
 ## 5. 驗證紀錄
 
@@ -71,6 +71,6 @@ supabase-exam-setup.sql        新資料表建表 SQL
 
 其餘答案、知識點、四科級距、數學非選題級距（含 0～2 分無 A++ 的設計）皆與文件一致。
 
-仍待確認：國三全冊模考 社會 第 49 題，文件知識點為 `S―110`（對照表無此編號，疑為 S―10 或 S―11），目前該題計分但不歸入任何知識點。
+國三全冊模考 社會 第 49 題：文件知識點為 `S―110`（筆誤），經行政端確認為 S―10「臺灣史的變遷」，已修正。
 
 另依行政端決定，國中模考成績單不再列出「本次考卷沒出題的知識點」（原系統顯示為 0%／待加強），評語也不再提及。
