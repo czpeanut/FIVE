@@ -51,7 +51,7 @@ supabase-exam-setup.sql        新資料表建表 SQL
 見 PR 說明或對話紀錄中的完整清單；確認後修改對應的資料檔即可：
 - 國中模考：`src/exams/junior-mock/data.json`
 - 國小學力檢測：`src/exams/elementary/data.ts`
-- 國小學科能力檢測：`src/exams/elementary-basic/data.json`、`scoring.ts` 的 `EB_EXAMS`（卷名）
+- 國小學科能力檢測：`src/exams/elementary-basic/data.json`（年級對應：fileB＝小四、fileC＝小五、fileA＝小六，見 `scoring.ts` 的 `EB_EXAMS`）
 - 達陣文理的分校：`src/lib/branches.ts`（會同時影響 FIVE 的分校選單）
 
 ## 5. 驗證紀錄
