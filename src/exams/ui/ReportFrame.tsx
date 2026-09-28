@@ -1,6 +1,15 @@
 import { ReactNode } from "react";
 import { C, SERIF } from "./theme";
 
+// 資訊條每格約可放 14px 字 × N 字；超過就縮小字級（最小 11px，再長則換行）
+function infoFontSize(value: string, cells: number): number {
+  const perCell = cells >= 4 ? 10 : 14;
+  const len = (value || "").length;
+  if (len <= perCell) return 14;
+  if (len <= perCell * 1.25) return 12;
+  return 11;
+}
+
 // A4 成績單頁框（794×1123，固定一頁、overflow hidden；排版與 FIVE 的 PrintPage 標頭一致）
 // 需要精確置中的小元件（校徽、印章）一律用 SVG，避免 html2canvas 垂直偏移。
 export function ReportFrame({ school, kicker, title, info, children, footer, setRef }: {
@@ -41,7 +50,8 @@ export function ReportFrame({ school, kicker, title, info, children, footer, set
           {info.map((item, i) => (
             <div key={item.label} style={{ flex: 1, minWidth: 0, padding: "9px 12px", borderRight: i < info.length - 1 ? `1px solid ${C.rule}` : "none" }}>
               <div style={{ fontSize: 8, letterSpacing: ".18em", color: C.muted, marginBottom: 4, fontFamily: "monospace" }}>{item.label}</div>
-              <div style={{ fontSize: 14, fontWeight: 600, color: C.ink, whiteSpace: "nowrap", overflow: "hidden", textOverflow: "ellipsis" }}>{item.value || "—"}</div>
+              {/* 長字串（如完整校名）自動縮小字級並允許換行，不截斷 */}
+              <div style={{ fontSize: infoFontSize(item.value, info.length), fontWeight: 600, color: C.ink, lineHeight: 1.35, wordBreak: "break-all" }}>{item.value || "—"}</div>
             </div>
           ))}
         </div>

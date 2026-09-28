@@ -14,10 +14,13 @@ export function ElementaryPage({ exam, subject, student, info, answer, school, s
   const year = /^\d{4}/.test(info.examDate ?? "") ? `${info.examDate!.slice(0, 4)}年` : "";
 
   const svg = radarSvg(r.radarData.map(d => ({ indicator: d.subject, percent: d.A })), 230);
-  const bar = stackedBarSvg(r.barData.map(b => ({ name: b.name, a: b.correctRate, b: b.incorrectRate })), { width: 330, labelWidth: 118, legend: ["答對率", "答錯率"] });
+  // 單元數多（如六年級數學 11 個）時改用緊湊排列，確保固定一頁 A4 且不壓到頁尾
+  const dense = r.barData.length > 8;
+  const bar = stackedBarSvg(r.barData.map(b => ({ name: b.name, a: b.correctRate, b: b.incorrectRate })),
+    { width: 330, labelWidth: 126, legend: ["答對率", "答錯率"], ...(dense ? { barH: 14, gap: 8, fontSize: 11.5 } : {}) });
 
   const th = { padding: "5px 8px", fontFamily: "monospace", fontSize: 9, color: C.muted, fontWeight: 400, letterSpacing: ".12em", textAlign: "left" as const };
-  const td = { padding: "5px 8px", fontSize: 11.5, color: C.ink, borderBottom: `1px solid ${C.ruleLight}` };
+  const td = { padding: dense ? "3px 8px" : "5px 8px", fontSize: 11.5, color: C.ink, borderBottom: `1px solid ${C.ruleLight}` };
 
   return (
     <ReportFrame
@@ -47,7 +50,7 @@ export function ElementaryPage({ exam, subject, student, info, answer, school, s
             「五力檢測」旨在全面評估學生在各學科的核心能力表現。除了檢視各單元的學習成效外，更著重於分析學生在解題過程中所展現的各項關鍵能力。本報告將詳細呈現各項指標的達成狀況，幫助學生精準掌握自身的優勢與弱點。建議同學可根據報告中的分析結果，調整未來的學習策略與時間分配，打造最適合自己的專屬複習計畫。
           </p>
           <div style={{ display: "flex", gap: 10, alignItems: "center" }}>
-            <div style={{ flexShrink: 0, marginLeft: -30 }} dangerouslySetInnerHTML={{ __html: svg }} />
+            <div style={{ flexShrink: 0, marginLeft: -16 }} dangerouslySetInnerHTML={{ __html: svg }} />
             <table style={{ flex: 1, borderCollapse: "collapse" }}>
               <thead><tr style={{ borderBottom: `1.5px solid ${C.ink}` }}><th style={{ ...th, width: "36%" }}>五力指標</th><th style={th}>說明</th></tr></thead>
               <tbody>{r.abilityRows.map(a => (

@@ -1,6 +1,7 @@
 // 國中模考成績單（原 test-output-sys）計分邏輯。
 // 逐行移植自原 script.js 的 getLevel / getBackgroundColor / getGradeBand / analyzeAndGenerateReport，
 // 計算方式、排序、評語文字皆維持原樣，請勿「順手」修正，差異需經行政端確認後才改。
+// 已確認的差異：沒出題的知識點不列出（見 analyzeJuniorMock）。
 import rawData from "./data.json";
 
 export interface JmQuestion { id: number; correct: string; skill: string[] | string; weight: number }
@@ -155,7 +156,8 @@ export function analyzeJuniorMock(
     skills.forEach(s => { skillMaxScores[s] += perSkill; });
   });
 
-  const skills = quizData.skills.map(s => {
+  // 行政端決定：本次考卷沒出題的知識點不列入成績單與評語（原系統會顯示為 0%／待加強）
+  const skills = quizData.skills.filter(s => skillMaxScores[s] > 0).map(s => {
     const score = skillScores[s] || 0;
     const max   = skillMaxScores[s] || 1;
     const pct   = Math.round((score / max) * 100);

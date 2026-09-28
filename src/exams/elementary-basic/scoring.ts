@@ -12,11 +12,12 @@ export interface EbSubjectData { dimensions: EbDimension[]; descriptions: { name
 type EbData = Record<string, Record<string, EbSubjectData>>;
 const DATA = rawData as unknown as EbData;
 
-// 三份 Excel 分別是不同年級的考卷；卷 A / 卷 B 的年級待行政端確認後再改名稱即可（key 不要改，會影響已存資料）
+// 三份 Excel 分別是不同年級的考卷（key 為整合時的檔案代號，不要改，會影響已存資料）
+// fileA = 84f3bb37（小六，已與行政端提供的小六檔比對一致）、fileB = 87b9657c（小四）、fileC = e077bba2（小五）
 export const EB_EXAMS: { key: string; name: string }[] = [
-  { key: "fileA", name: "卷 A（年級待確認）" },
+  { key: "fileB", name: "小四" },
   { key: "fileC", name: "小五" },
-  { key: "fileB", name: "卷 B（年級待確認）" },
+  { key: "fileA", name: "小六" },
 ];
 export const EB_SUBJECTS = ["國文", "英文", "數學"] as const;
 export const EB_QUESTION_COUNT = 20;
