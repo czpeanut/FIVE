@@ -36,7 +36,8 @@ src/app/api/exam/answers       作答 API（exam_answers，伺服器端驗證題
 supabase-exam-setup.sql        新資料表建表 SQL
 ```
 
-- 分校登入與 FIVE 共用 `localStorage.selectedBranch_v1`，選過一次各系統通用。
+- 分校登入：每套新系統各自記住（`localStorage.examBranch_v1_<module>`），不與 FIVE 的 `selectedBranch_v1` 共用。（早期版本曾共用，導致在新系統選過分校後，FIVE 一進去就跳過分校清單，已改掉。）
+- 讀取成績的 API（`/api/report/answers`、`/api/exam/answers`）依主鍵排序分頁讀取。Supabase 單次查詢最多回傳 1000 筆，分校成績超過 1000 格時，舊版名冊會少顯示已填的週次（福山校、小港校曾發生；資料本身都有存入）。
 - 名冊依「模組 × 考卷（測驗項目／年級）× 分校」分開。
 - 操作記錄寫入既有的 `report_activity_log`，action 為 `exam_save_answer`、`exam_add_student`、`exam_remove_student`、`exam_save_answer_client_error`，detail 內含 module／exam。
 
@@ -45,6 +46,8 @@ supabase-exam-setup.sql        新資料表建表 SQL
 1. 在 Supabase SQL Editor 執行 `supabase-exam-setup.sql`（只新增 `exam_students`、`exam_answers`，不動既有資料表）。
 2. `npm run build` 確認通過（先停掉 dev server）。
 3. `npx vercel --prod --yes`。
+
+> Vercel 已串接 GitHub：master 合併後自動部署到正式站。`vercel.json` 設定 `claude/**` 分支不建立預覽部署（預覽環境沒有 Supabase 環境變數，建置必定失敗）。
 
 ## 4. 待確認事項（整合時照原樣保留，未修改）
 
