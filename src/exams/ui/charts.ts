@@ -7,9 +7,9 @@ export { radarSvg } from "@/components/PrintPage";
 const esc = (s: string) => s.replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/>/g, "&gt;");
 
 // 橫向堆疊長條圖（國小學力檢測「各單元答對率分析」：答對率＋答錯率，0~100%）
-export function stackedBarSvg(rows: { name: string; a: number; b: number }[], opts: { width: number; labelWidth: number; legend: [string, string] }): string {
-  const { width, labelWidth, legend } = opts;
-  const barH = 18, gap = 10, top = 30, right = 16;
+export function stackedBarSvg(rows: { name: string; a: number; b: number }[], opts: { width: number; labelWidth: number; legend: [string, string]; barH?: number; gap?: number; fontSize?: number }): string {
+  const { width, labelWidth, legend, barH = 18, gap = 10, fontSize = 12 } = opts;
+  const top = 30, right = 16;
   const plotW = width - labelWidth - right;
   const height = top + rows.length * (barH + gap) + 4;
   let s = `<svg xmlns="http://www.w3.org/2000/svg" width="${width}" height="${height}" viewBox="0 0 ${width} ${height}">`;
@@ -27,7 +27,7 @@ export function stackedBarSvg(rows: { name: string; a: number; b: number }[], op
   rows.forEach((r, i) => {
     const y = top + i * (barH + gap);
     const wa = (plotW * r.a) / 100, wb = (plotW * r.b) / 100;
-    s += `<text x="${labelWidth - 8}" y="${y + barH / 2}" font-family="'Noto Serif TC',serif" font-size="12" fill="${C.ink}" text-anchor="end" dominant-baseline="central">${esc(r.name)}</text>`;
+    s += `<text x="${labelWidth - 8}" y="${y + barH / 2}" font-family="'Noto Serif TC',serif" font-size="${fontSize}" fill="${C.ink}" text-anchor="end" dominant-baseline="central">${esc(r.name)}</text>`;
     s += `<rect x="${labelWidth}" y="${y}" width="${wa.toFixed(1)}" height="${barH}" fill="${C.accent}"/>`;
     s += `<rect x="${(labelWidth + wa).toFixed(1)}" y="${y}" width="${wb.toFixed(1)}" height="${barH}" fill="${C.ruleLight}"/>`;
   });

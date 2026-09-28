@@ -54,7 +54,6 @@ const CSS = `
 .pt-kicker { font-size:10px; letter-spacing:.34em; color:#9a917c; }
 .pt-name { font-weight:700; font-size:30px; letter-spacing:.06em; color:#23201a; margin-top:6px; line-height:1.15; }
 .pt-sub { font-size:13px; color:#6e685a; margin-top:6px; }
-.pt-stamp { flex-shrink:0; opacity:.78; }
 .pt-rule1 { margin:22px 48px 0; border-top:2px solid #23201a; }
 .pt-rule2 { margin:3px 48px 0; border-top:1px solid #23201a; }
 .pt-section { position:relative; padding:26px 48px 4px; }
@@ -82,7 +81,6 @@ const CSS = `
   .pt-wrap { padding:20px 12px; }
   .pt-head { padding:26px 20px 0; }
   .pt-name { font-size:24px; }
-  .pt-stamp { display:none; }
   .pt-rule1, .pt-rule2 { margin-left:20px; margin-right:20px; }
   .pt-section { padding-left:20px; padding-right:20px; }
   .pt-row { grid-template-columns:40px 1fr 18px; gap:14px; padding:16px 10px; margin:0 -10px; }
@@ -114,14 +112,6 @@ export default function Portal() {
                 <div className="pt-sub serif">成績單輸出・學習系統入口，請選擇要進入的系統</div>
               </div>
             </div>
-            <svg className="pt-stamp" width="72" height="72" viewBox="0 0 72 72" aria-hidden="true">
-              <g transform="rotate(-12 36 36)">
-                <circle cx="36" cy="36" r="30" fill="none" stroke="#b0402c" strokeWidth="2" />
-                <circle cx="36" cy="36" r="25" fill="none" stroke="#b0402c" strokeWidth="0.8" />
-                <text x="36" y="29" fontFamily="'Noto Serif TC',serif" fontSize="8" letterSpacing="1" fill="#b0402c" textAnchor="middle" dominantBaseline="central">學城教育</text>
-                <text x="36" y="43" fontFamily="'Noto Serif TC',serif" fontSize="12" fontWeight="900" fill="#b0402c" textAnchor="middle" dominantBaseline="central">成績單</text>
-              </g>
-            </svg>
           </div>
           <div className="pt-rule1" />
           <div className="pt-rule2" />
