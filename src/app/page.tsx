@@ -80,7 +80,7 @@ const CSS = `
 @media (max-width: 600px) {
   .pt-wrap { padding:20px 12px; }
   .pt-head { padding:26px 20px 0; }
-  .pt-name { font-size:24px; }
+  .pt-name { font-size:21px; }
   .pt-rule1, .pt-rule2 { margin-left:20px; margin-right:20px; }
   .pt-section { padding-left:20px; padding-right:20px; }
   .pt-row { grid-template-columns:40px 1fr 18px; gap:14px; padding:16px 10px; margin:0 -10px; }
@@ -105,10 +105,10 @@ export default function Portal() {
           {/* 報頭 */}
           <div className="pt-head">
             <div style={{ display: "flex", alignItems: "center", gap: 16 }}>
-              <Seal char="學" />
+              <Seal char="整" />
               <div>
-                <div className="pt-kicker mono">LEARNING SYSTEM · PORTAL</div>
-                <div className="pt-name serif">學城教育系統</div>
+                <div className="pt-kicker mono">AUTOMATION · PORTAL</div>
+                <div className="pt-name serif">補習班自動化功能整合入口</div>
                 <div className="pt-sub serif">成績單輸出・學習系統入口，請選擇要進入的系統</div>
               </div>
             </div>
@@ -143,7 +143,7 @@ export default function Portal() {
           </div>
         </div>
 
-        <div className="pt-caption mono">XUECHENG EDUCATION · 學城文理補習班</div>
+        <div className="pt-caption mono">學城・學築・達睿・達學・逸學・粹學 文理補習班</div>
       </div>
     </div>
   );
