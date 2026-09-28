@@ -9,14 +9,26 @@ import { PaperPage, DoubleRule, Loading, ErrorLine } from "@/exams/ui/Paper";
 import { C } from "@/exams/ui/theme";
 
 // 選項字母輸入（輸入 A～E 後自動跳下一格，與原系統相同）
+// 注意輸入法（注音、手機鍵盤選字）：打字時會先進入「組字」狀態，若在組字中途就跳格，
+// 輸入法送出時會把同一個字母再填進下一格（打一次填兩格）。因此組字中只更新本格，
+// 等組字結束（compositionend）才跳格，並防止同一格在短時間內跳兩次。
 function LetterGrid({ spec, values, onChange }: { spec: InputSpec; values: string[]; onChange: (v: string[]) => void }) {
   const refs = useRef<(HTMLInputElement | null)[]>([]);
+  const lastJump = useRef<{ from: number; at: number } | null>(null);
   const letters = spec.letters ?? "";
 
-  function handle(i: number, raw: string) {
+  // 同一格短時間內只跳一次（Safari 會在 compositionend 之後再送一次一般 input 事件）
+  function jumpFrom(i: number) {
+    const now = Date.now();
+    if (lastJump.current && lastJump.current.from === i && now - lastJump.current.at < 300) return;
+    lastJump.current = { from: i, at: now };
+    refs.current[i + 1]?.focus();
+  }
+
+  function handle(i: number, raw: string, allowJump: boolean) {
     const v = raw.toUpperCase().replace(new RegExp(`[^${letters}]`, "g"), "").slice(-1);
     const next = [...values]; next[i] = v; onChange(next);
-    if (v) refs.current[i + 1]?.focus();
+    if (v && allowJump) jumpFrom(i);
   }
   function keyDown(i: number, e: React.KeyboardEvent<HTMLInputElement>) {
     if (e.key === "Backspace" && !values[i] && i > 0) { refs.current[i - 1]?.focus(); }
@@ -27,8 +39,12 @@ function LetterGrid({ spec, values, onChange }: { spec: InputSpec; values: strin
       {values.map((v, i) => (
         <label key={i} title={spec.hints?.[i] ?? ""} style={{ display: "flex", alignItems: "center", gap: 8 }}>
           <span className="mono" style={{ fontSize: 11, color: C.muted, minWidth: 30, textAlign: "right" }}>{String(i + 1).padStart(2, "0")}</span>
-          <input ref={el => { refs.current[i] = el; }} value={v} onChange={e => handle(i, e.target.value)} onKeyDown={e => keyDown(i, e)}
-            onFocus={e => e.target.select()} inputMode="text" autoComplete="off" maxLength={2} placeholder={letters[0] + "～" + letters[letters.length - 1]}
+          <input ref={el => { refs.current[i] = el; }} value={v}
+            onChange={e => handle(i, e.target.value, !(e.nativeEvent as InputEvent).isComposing)}
+            onCompositionEnd={e => handle(i, e.currentTarget.value, true)}
+            onKeyDown={e => keyDown(i, e)}
+            onFocus={e => e.target.select()} inputMode="text" autoComplete="off" autoCorrect="off" autoCapitalize="characters" spellCheck={false}
+            maxLength={2} placeholder={letters[0] + "～" + letters[letters.length - 1]}
             style={{ width: 52, padding: "5px 0", textAlign: "center", fontFamily: "'JetBrains Mono', monospace", fontSize: 15, fontWeight: 600, color: C.ink,
               background: v ? "transparent" : "rgba(176,64,44,.05)", border: `1.5px solid ${v ? C.ink : C.rule}`, outline: "none" }} />
         </label>
