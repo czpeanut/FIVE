@@ -72,6 +72,7 @@ export const BRANCH_GROUPS: BranchGroup[] = [
       "學築文理 右昌校",
       "學築文理 左營校",
       "學築文理 五甲校",
+      "學築文理 大寮校",
     ],
   },
   {
